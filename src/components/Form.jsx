@@ -23,7 +23,7 @@ function Form() {
   return (
     <div className="container text-center">
       <h1>
-        Hello {name}
+        Contact Us {name}
       </h1>
       <form className="form" onSubmit={handleFormSubmit}>
         <input
@@ -40,6 +40,14 @@ function Form() {
           onChange={handleInputChange}
           type="text"
           placeholder="Email"
+          required
+        />
+        <input
+          value={email}
+          name="Confirm Email"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Confirm Email"
           required
         />
         <button type="submit">

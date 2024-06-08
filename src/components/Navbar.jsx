@@ -4,7 +4,7 @@ function NavTabs() {
 
   return (
     <div className="nav">
-      <h1>Andrew Evans</h1>
+      <h1>Select Materials</h1>
 
       <ul className='nav nav-tabs'>
         <li className="nav-item">
@@ -16,32 +16,13 @@ function NavTabs() {
           </Link>
         </li>
         <li className="nav-item">
-          <a
-            className="nav-link"
-            href="./images/Links/Resume (1).pdf"
-            target="_blank"
-          >
-            Resume
-          </a>
-        </li>
-        <li className="nav-item">
           <Link
             to="/About"
             className={
               currentPage === '/About' ? 'nav-link active' : 'nav-link'
             }
           >
-            About
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            to="/Portfolio"
-            className={
-              currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'
-            }
-          >
-            Portfolio
+            About Us
           </Link>
         </li>
         <li className="nav-item">
