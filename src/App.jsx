@@ -3,7 +3,8 @@ import { Outlet } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
 import ContactFooter from './components/ContactFooter';
-import selectMaterialsImage from './assets/SelectMaterials.png';
+import './App.css';
+
 
 function App() {
   // The Outlet component will conditionally swap between the different pages according to the URL
@@ -11,7 +12,7 @@ function App() {
     < >
       <Navbar />
       <Banner/>
-      <main className="mx-3">
+      <main className="mx-3" >
         <Outlet />
       </main>
       <footer>
@@ -22,3 +23,4 @@ function App() {
 }
 
 export default App;
+

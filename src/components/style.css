@@ -16,3 +16,21 @@
   border-radius: 7px;
 }
   
+/* NavTabs.css */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .img-fluid {
+    max-width: 50%; /* Adjust the size as needed for desktop */
+    max-height: 50%
+  }
+}
+@media (max-width: 767px){
+  .img-fluid {
+    max-width: 60%; /* Adjust the size as needed for mobile */
+    max-height: 60%
+  }
+}

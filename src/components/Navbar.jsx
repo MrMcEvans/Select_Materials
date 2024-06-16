@@ -1,26 +1,29 @@
+import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import selectMaterialsImage from '../assets/SelectMaterials.png';
+import './style.css';
+
 function NavTabs() {
   const currentPage = useLocation().pathname;
 
   return (
     <header>
-      <nav class="navbar navbar-expand-lg bg-body">
-        <div class="container-fluid">
+      <nav className="navbar navbar-expand-lg bg-body">
+        <div className="container-fluid">
           <button
             data-mdb-collapse-init
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-mdb-target="#navbarExample01"
             aria-controls="navbarExample01"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="fas fa-bars"></i>
+            <i className="fas fa-bars"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarExample01">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item active">
+          <div className="collapse navbar-collapse" id="navbarExample01">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item active">
                 <Link
                   to="/"
                   className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
@@ -28,7 +31,7 @@ function NavTabs() {
                   Home
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link
                   to="/About"
                   className={
@@ -38,7 +41,7 @@ function NavTabs() {
                   About Us
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link
                   to="/Contact"
                   className={
@@ -52,18 +55,12 @@ function NavTabs() {
           </div>
         </div>
       </nav>
-
-      <div class="p-5 text-center bg-body-tertiary"
-        style={{
-          backgroundImage: `url(${selectMaterialsImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        height: '50vh',
-      maxWidth: '100vw',}}
-      >
-        <img src="../ass" alt="logo" />
-        <h1 class="mb-3">Select Materials</h1>
-        <h4 class="mb-3">Port Arthur, Texas</h4>
+      <div className="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
+        <div className="container text-center">
+          <img src={selectMaterialsImage} className="img-fluid responsive-img" alt="Responsive image" />
+          {/* <h1 className="display-4">Select Materials</h1> */}
+          <p className="lead">Port Arthur, TX</p>
+        </div>
       </div>
     </header>
   );
@@ -72,7 +69,15 @@ function NavTabs() {
 export default NavTabs;
 
 
-{/* <div class="navbar navbar-expand-lg bg-body">
+{
+//   style={{
+//     backgroundImage: `url(${selectMaterialsImage})`,
+//     backgroundSize: 'cover',
+//     backgroundPosition: 'center',
+//   height: '50vh',
+// maxWidth: '100vw',}}
+  
+  /* <div class="navbar navbar-expand-lg bg-body">
       <h1>Select Materials</h1>
 
       <ul className='nav nav-tabs'>
