@@ -4,7 +4,6 @@ import selectMaterialsImage from '../assets/SelectMaterials.png';
 import './style.css';
 
 function NavTabs() {
-  
   const currentPage = useLocation().pathname;
 
   return (
@@ -12,9 +11,9 @@ function NavTabs() {
       <nav className="navbar navbar-expand-lg bg-body">
         <div className="container-fluid">
           <button
-            data-mdb-collapse-init
             className="navbar-toggler"
             type="button"
+            data-mdb-toggle="collapse"
             data-mdb-target="#navbarExample01"
             aria-controls="navbarExample01"
             aria-expanded="false"
@@ -27,7 +26,9 @@ function NavTabs() {
               <li className="nav-item active">
                 <Link
                   to="/"
-                  className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+                  className={
+                    currentPage === '/' ? 'nav-link active' : 'nav-link'
+                  }
                 >
                   Home
                 </Link>
@@ -58,7 +59,11 @@ function NavTabs() {
       </nav>
       <div className="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
         <div className="container text-center">
-          <img src={selectMaterialsImage} className="img-fluid responsive-img" alt="Responsive image" />
+          <img
+            src={selectMaterialsImage}
+            className="img-fluid responsive-img"
+            alt="Responsive image"
+          />
           {/* <h1 className="display-4">Select Materials</h1> */}
           <p className="lead">Port Arthur, TX</p>
         </div>
@@ -69,15 +74,13 @@ function NavTabs() {
 
 export default NavTabs;
 
-
 {
-//   style={{
-//     backgroundImage: `url(${selectMaterialsImage})`,
-//     backgroundSize: 'cover',
-//     backgroundPosition: 'center',
-//   height: '50vh',
-// maxWidth: '100vw',}}
-  
+  //   style={{
+  //     backgroundImage: `url(${selectMaterialsImage})`,
+  //     backgroundSize: 'cover',
+  //     backgroundPosition: 'center',
+  //   height: '50vh',
+  // maxWidth: '100vw',}}
   /* <div class="navbar navbar-expand-lg bg-body">
       <h1>Select Materials</h1>
 
@@ -164,4 +167,5 @@ export default NavTabs;
       </div>
       
 
-    </div> */}
+    </div> */
+}
