@@ -15,18 +15,43 @@
   border: 3px solid black;
   border-radius: 7px;
 }
-  
+
 /* NavTabs.css */
 .img-fluid {
   max-width: 100%;
   height: auto;
 }
 
+.navbar.bg-body {
+  background-color: rgb(97, 97, 97) !important;
+}
+.navbar-nav .nav-link {
+  font-size: 25px; /* Adjust the size as needed */
+  color: lightgray;
+}
+.navbar-nav .nav-link.active {
+  font-size: 25px; /* Adjust the size as needed */
+  color: white;
+}
+.navbar-nav .nav-link.active {
+  background-color: gray; /* Adjust the color as needed */
+
+  
+}
+footer.bg-body-tertiary {
+  background-color: rgb(29, 29, 29) !important;
+  color: white !important;
+  
+}
+
+
+
 @media (min-width: 768px) {
   .img-fluid {
     max-width: 50%; /* Adjust the size as needed for desktop */
     max-height: 50%
   }
+
 }
 @media (max-width: 767px){
   .img-fluid {

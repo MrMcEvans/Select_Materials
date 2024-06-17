@@ -4,6 +4,7 @@ import selectMaterialsImage from '../assets/SelectMaterials.png';
 import './style.css';
 
 function NavTabs() {
+  
   const currentPage = useLocation().pathname;
 
   return (
