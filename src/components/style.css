@@ -1,3 +1,25 @@
+/* @import selectMaterialsImage from '../assets/SelectMaterials.png'; */
+@font-face {
+  font-family: 'Hanzel';
+  src: url('../assets/HanzelThinBold.ttf');
+}
+
+
+
+.jumbotron {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
 .form {
     display: flex;
     flex-direction: column;
@@ -22,25 +44,59 @@
   height: auto;
 }
 
-.navbar.bg-body {
-  background-color: rgb(97, 97, 97) !important;
-}
-.navbar-nav .nav-link {
-  font-size: 25px; /* Adjust the size as needed */
-  color: lightgray;
-}
-.navbar-nav .nav-link.active {
-  font-size: 25px; /* Adjust the size as needed */
+.card{
+  margin: 10px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   color: white;
+  border-radius: 0;
+  --bs-card-border-width: none;
 }
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+  z-index: 9999;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  padding-bottom: 20px;
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.8);
+}
+
 .navbar-nav .nav-link.active {
   background-color: gray; /* Adjust the color as needed */
-
-  
 }
+
+.title {
+  position: fixed;
+  top: 4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  border-top: 1px solid white; /* Adjust as needed */
+  border-bottom: 1px solid white;
+  font-family: 'Hanzel', sans-serif;
+  letter-spacing: 4px; /* Adjust as needed */
+}
+.mr-auto{
+  font-family: 'Hanzel', sans-serif;
+  letter-spacing: 4px; /* Adjust as needed */
+  padding: 15px;
+  font-size: 20px;
+}
+.nav-item{
+
+  border-bottom: 1px solid white;
+}
+
+
 footer.bg-body-tertiary {
-  background-color: rgb(29, 29, 29) !important;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
   color: white !important;
+  
   
 }
 

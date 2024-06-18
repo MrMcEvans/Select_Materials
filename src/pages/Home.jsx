@@ -39,34 +39,33 @@ export default function Home() {
       <div>
         <section className="wrap">
           <h3 className="Tab">About Us</h3>
-          
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          <div className="card">
+  <div className="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               amet repellendus recusandae atque eaque distinctio aliquid beatae
               cupiditate facilis, excepturi laboriosam veniam molestiae magni
-              similique quod odit architecto officia non.
+              similique quod odit architecto officia non.</div>
+</div>
+            <p>
+              
             </p>
           
         </section>
         <section className="wrap">
-        <div className="section-container">
-            <h3 className="Work">Placeholder</h3>
-        
-          <ul  className="imgClass ">
-
-                            
-              <li>
-               
-              </li>
-              <li>
-               
-              </li>
-              <li>
-                
-              </li>
-
-          </ul>
-          </div>
+        <div className="card text-center">
+  <div className="card-header">Services</div>
+  <div className="card-body">
+    <h5 className="card-title">Products we offer</h5>
+    <div className="card" style={{width: 'auto'}}>
+  <ul className="list-group list-group-light">
+    <li className="list-group-item px-3">Cras justo odio</li>
+    <li className="list-group-item px-3">Dapibus ac facilisis in</li>
+    <li className="list-group-item px-3">Vestibulum at eros</li>
+  </ul>
+</div>
+    <a href="/Contact" className="btn btn-primary" data-mdb-ripple-init>Contact For a Quote</a>
+  </div>
+  <div className="card-footer text-muted">2 days ago</div>
+</div>
         </section>
         <br /><br /><br />
         <section >
