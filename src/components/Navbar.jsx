@@ -24,7 +24,7 @@ function NavTabs() {
   }, [scrolled]);
 
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="dark">
       <Navbar.Brand className='title' as={Link} to="/">
         Select Materials
       </Navbar.Brand>
