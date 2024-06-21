@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  padding-bottom: 50px;
 }
 
 
@@ -46,7 +46,7 @@
 }
 
 .card{
-  margin: 10px;
+  width: auto;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   color: white;
   border-radius: 0;
@@ -100,6 +100,8 @@
 footer.bg-body-tertiary {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
   color: white !important;
+  --bs-bg-opacity: .3;
+  margin-top: 40px;
   
   
 }
@@ -111,6 +113,11 @@ footer.bg-body-tertiary {
     max-width: 50%; /* Adjust the size as needed for desktop */
     max-height: 50%
   }
+  .nav-item{
+    padding: 10px;
+    border-bottom: 1px solid white;
+    margin-right: 30px;
+  }
 
 }
 @media (max-width: 767px){
@@ -118,4 +125,22 @@ footer.bg-body-tertiary {
     max-width: 60%; /* Adjust the size as needed for mobile */
     max-height: 60%
   }
+  @media (max-width: 767px){
+  .img-fluid {
+    max-width: 60%; /* Adjust the size as needed for mobile */
+    max-height: 60%
+  }
+  .home-card {
+    width: 100%; /* Set the width to 100% */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-left: 0; /* Remove left margin */
+    margin-right: 0; /* Remove right margin */
+    padding-left: 0; /* Remove left padding */
+    padding-right: 0; /* Remove right padding */
+  }
+  .container, .row {
+    padding-left: 0; /* Remove left padding */
+    padding-right: 0; /* Remove right padding */
+  }
+}
 }

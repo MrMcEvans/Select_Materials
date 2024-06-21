@@ -34,12 +34,11 @@ function MyMapComponent() {
 export default function Home() {
   return (
     <div className="container">
-      <h2 className="caption" id="captionText">
-      </h2>
-      <div>
+      <div className='home-card'>
         <section className="wrap">
-          <h3 className="Tab">About Us</h3>
+          
           <div className="card">
+          <h3 className="Tab">About Us</h3>
   <div className="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               amet repellendus recusandae atque eaque distinctio aliquid beatae
               cupiditate facilis, excepturi laboriosam veniam molestiae magni
