@@ -19,7 +19,10 @@
   padding-bottom: 50px;
 }
 
-
+.list-group-item {
+  background-color: rgb(23, 23, 23);
+  color: white;
+}
 
 .form {
     display: flex;
@@ -53,6 +56,7 @@
   --bs-card-border-width: none;
 }
 .navbar {
+
   position: fixed;
   width: 100%;
   top: 0;
@@ -91,6 +95,10 @@
   font-size: 20px;
 
 }
+.navbar-toggler {
+  margin-left: 12px;
+  margin-top: 5px;
+}
 .nav-item{
  padding: 5px;
   border-bottom: 1px solid white;
@@ -105,10 +113,95 @@ footer.bg-body-tertiary {
   
   
 }
+.card-title2{
+  margin-top: 30px;
+}
+.form-card {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
 
+}
+
+.form-outline {
+  display: block;
+  width: auto; /* Adjust this as needed */
+  margin: auto;
+  height: auto;
+  color: white;
+  width: 400px;
+}
+
+form input[type="text"] {
+  background-color: #494949;
+}
+
+form input[type="email"] {
+  background-color: #494949;
+}
+form input:focus {
+  border-color: #4a90e2;
+  outline: none; /* Removes the default focus outline */
+}
+
+form input:hover {
+  border-color: #999;
+}
+form button {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #357abD;
+}
+
+#form4Example3 {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #494949;
+}
+
+#form4Example3:focus {
+  border-color: #4a90e2;
+  outline: none; /* Removes the default focus outline */
+}
+
+#form4Example3:hover {
+  border-color: #999;
+}
+form button {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #357abD;
+}
 
 
 @media (min-width: 768px) {
+  .call-us-link {
+    position: fixed;
+    right: 20px; /* Adjust as needed */
+    top: 20px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's above other content */
+    font-size: 20px;
+    border: 0;
+  }
   .img-fluid {
     max-width: 50%; /* Adjust the size as needed for desktop */
     max-height: 50%
@@ -117,6 +210,26 @@ footer.bg-body-tertiary {
     padding: 10px;
     border-bottom: 1px solid white;
     margin-right: 30px;
+    font-size: 22.5px;
+    margin-left: 10px;
+  }
+  .title{
+    font-size: 40px;
+    margin-top: 10px;
+    letter-spacing: 10px;
+    font-weight: bold;
+  }
+  #logo-card {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Ensure the container fills its parent's height */
+  }
+  #logo{
+    width: 70%;
+    max-height: 70%;
+    align-items: center;
+  
   }
 
 }
@@ -142,5 +255,18 @@ footer.bg-body-tertiary {
     padding-left: 0; /* Remove left padding */
     padding-right: 0; /* Remove right padding */
   }
+
+  .call-us-link {
+    position: fixed;
+    right: 20px; /* Adjust as needed */
+    top: 20px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's above other content */
+    font-size: 20px;
+    border: 0;
+  }
+  .form-outline{
+    width: 100%;
+  }
+  
 }
 }

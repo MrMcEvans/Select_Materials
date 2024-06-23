@@ -38,7 +38,7 @@ export default function Home() {
         <section className="wrap">
           
           <div className="card">
-          <h3 className="Tab">About Us</h3>
+          <h3 className="Tab">Who are we?</h3>
   <div className="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               amet repellendus recusandae atque eaque distinctio aliquid beatae
               cupiditate facilis, excepturi laboriosam veniam molestiae magni
@@ -51,11 +51,10 @@ export default function Home() {
         </section>
         <section className="wrap">
         <div className="card text-center">
-  <div className="card-header">Services</div>
   <div className="card-body">
-    <h5 className="card-title">Products we offer</h5>
+    <h2 className="card-title">Services we offer</h2>
     <div className="card" style={{width: 'auto'}}>
-  <ul className="list-group list-group-light">
+  <ul className="list-group list-group-dark">
     <li className="list-group-item px-3">Cras justo odio</li>
     <li className="list-group-item px-3">Dapibus ac facilisis in</li>
     <li className="list-group-item px-3">Vestibulum at eros</li>
