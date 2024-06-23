@@ -267,6 +267,8 @@ form button:hover {
   .form-outline{
     width: 100%;
   }
-  
+  .title{
+margin-top: 5px;
+  }
 }
 }
