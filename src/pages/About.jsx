@@ -5,24 +5,8 @@ export default function About() {
         </div>
         <section className="wrap">
         <div className="section-container">
-            <h3 className="Work">About Select Materiala</h3>
-            <ul  className="imgClass ">
-
-              
-              <li>
-              
-              </li>
-              <li>
-                
-              </li>
-              <li>
-                
-              </li>
-              <li>
-                
-              </li>
-
-          </ul>
+            <h3 className="Work">Products We Offer</h3>
+            
           </div>
         </section>
       </div>

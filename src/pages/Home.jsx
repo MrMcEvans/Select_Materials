@@ -62,7 +62,6 @@ export default function Home() {
 </div>
     <a href="/Contact" className="btn btn-primary" data-mdb-ripple-init>Contact For a Quote</a>
   </div>
-  <div className="card-footer text-muted">2 days ago</div>
 </div>
         </section>
         <br /><br /><br />
