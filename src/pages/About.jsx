@@ -1,4 +1,4 @@
-import Zoom from 'react-reveal/Zoom';
+
 import '../components/style.css';
 
 export default function About() {
