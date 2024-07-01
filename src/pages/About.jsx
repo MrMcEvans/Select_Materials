@@ -10,7 +10,7 @@ export default function About() {
         <div className="container-products">
           <div className="row">
             <div className="col-md-6 col-lg-4">
-              <Zoom id="pure-clay">
+              <div id="pure-clay">
                 <div className="card-products" style={{ width: '18rem' }}>
                   <img
                     src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp"
@@ -29,10 +29,10 @@ export default function About() {
                     </a>
                   </div>
                 </div>
-              </Zoom>
+              </div>
             </div>
             <div className="col-md-6 col-lg-4">
-              <Zoom id="top-soil">
+              <div id="top-soil">
                 <div className="card-products" style={{ width: '18rem' }}>
                   <img
                     src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp"
@@ -51,10 +51,10 @@ export default function About() {
                     </a>
                   </div>
                 </div>
-              </Zoom>
+              </div>
             </div>
             <div className="col-md-6 col-lg-4">
-              <Zoom id="clay">
+              <div id="clay">
                 <div className="card-products" style={{ width: '18rem' }}>
                   <img
                     src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp"
@@ -73,7 +73,7 @@ export default function About() {
                     </a>
                   </div>
                 </div>
-              </Zoom>
+              </div>
               
             </div>
             
@@ -81,7 +81,7 @@ export default function About() {
         </div>
       </div>
       <br id="pure-clay-description" />
-      <Zoom>
+      <div>
         <div className="card mb-3">
           <div className="row g-0">
             <div className="col-md-4">
@@ -161,9 +161,9 @@ export default function About() {
             </div>
           </div>
         </div>
-      </Zoom>
+      </div>
       <br id="top-soil-description" />
-      <Zoom>
+      <div>
         <div className="card mb-3">
           <div className="row g-0">
             <div className="col-md-4">
@@ -243,9 +243,9 @@ export default function About() {
             </div>
           </div>
         </div>
-      </Zoom>
+      </div>
       <br id="clay-60-40" />
-      <Zoom>
+      <div>
         <div className="card mb-3">
           <div className="row g-0">
             <div className="col-md-4">
@@ -325,7 +325,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </Zoom>
+      </div>
     </div>
   );
 }
