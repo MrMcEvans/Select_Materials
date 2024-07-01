@@ -1,0 +1,19 @@
+PRODUCTS:
+
+
+FORM:
+
+Add button functionality to send,
+Add email me a copy button functionality,
+
+
+FOOTER:
+
+Add all useful contact info and products src's,
+Add Facebook,
+
+
+HOME:
+
+Add products to list with src's,
+Change Jumbotron,

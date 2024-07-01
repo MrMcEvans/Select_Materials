@@ -5,7 +5,7 @@
 }
 
 
-
+/* Jumbotron */
 .jumbotron {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   background-size: cover;
@@ -18,12 +18,13 @@
   justify-content: center;
   padding-bottom: 50px;
 }
+/* J */
 
 .list-group-item {
   background-color: rgb(23, 23, 23);
   color: white;
 }
-
+/* Form */
 .form {
     display: flex;
     flex-direction: column;
@@ -41,8 +42,87 @@
   border: 3px solid black;
   border-radius: 7px;
 }
+.form-card {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
 
-/* NavTabs.css */
+}
+
+.form-outline {
+  display: block;
+  width: auto; /* Adjust this as needed */
+  margin: auto;
+  height: auto;
+  color: white;
+  width: 400px;
+}
+
+form input[type="text"] {
+  background-color: #494949;
+  color: white;
+}
+
+form input[type="email"] {
+  background-color: #494949;
+  color: white;
+}
+form input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+form input:hover {
+  border-color: #999;
+}
+form button {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #357abD;
+}
+
+#form4Example3 {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #494949;
+  color: white;
+}
+
+#form4Example3:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+#form4Example3:hover {
+  border-color: #ffffff;
+}
+form button {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #357abD;
+}
+/* F */
+
+
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -54,7 +134,28 @@
   color: white;
   border-radius: 0;
   --bs-card-border-width: none;
+  margin-top: 70px;
 }
+.card-products{
+  width: auto;
+  background: linear-gradient(to bottom, rgb(210, 210, 210) 0%, rgba(0, 0, 0, 0) 100%);
+  color: white;
+  border-radius: 0;
+  --bs-card-border-width: none;
+  margin: 10px;
+}
+.card-title{
+  font-size: 40px;
+  font-family: 'Hanzel', sans-serif;
+  letter-spacing: 4px;
+  border-top: 1px solid white; /* Adjust as needed */
+  border-bottom: 1px solid white;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+
 .navbar {
 
   position: fixed;
@@ -103,96 +204,47 @@
  padding: 5px;
   border-bottom: 1px solid white;
 }
-
+#Welcome{
+  border: rgb(97, 97, 97) 2px solid;
+  border-radius: 10px;
+}
 
 footer.bg-body-tertiary {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   color: white !important;
   --bs-bg-opacity: .3;
   margin-top: 40px;
   
   
 }
+p{
+  font-size: 20px;
+}
+.list-group{
+  list-style-type: none;
+  
+}
+li strong{
+  font-size: 18px;
+  text-decoration: underline;
+}
 .card-title2{
   margin-top: 30px;
+  font-family: 'Hanzel', sans-serif;
+  font-size: 40px;
+  letter-spacing: 5px;
 }
-.form-card {
-  display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-
-}
-
-.form-outline {
-  display: block;
-  width: auto; /* Adjust this as needed */
-  margin: auto;
-  height: auto;
-  color: white;
-  width: 400px;
+.card-title3{
+  font-family: 'Hanzel', sans-serif;
+  font-size: 30px;
+  letter-spacing: 5px;
 }
 
-form input[type="text"] {
-  background-color: #494949;
+.container-products {
+  display: flex; /* Use flexbox to center the content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
-
-form input[type="email"] {
-  background-color: #494949;
-}
-form input:focus {
-  border-color: #4a90e2;
-  outline: none; /* Removes the default focus outline */
-}
-
-form input:hover {
-  border-color: #999;
-}
-form button {
-  padding: 10px 20px;
-  background-color: #4a90e2;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-form button:hover {
-  background-color: #357abD;
-}
-
-#form4Example3 {
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  background-color: #494949;
-}
-
-#form4Example3:focus {
-  border-color: #4a90e2;
-  outline: none; /* Removes the default focus outline */
-}
-
-#form4Example3:hover {
-  border-color: #999;
-}
-form button {
-  padding: 10px 20px;
-  background-color: #4a90e2;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-form button:hover {
-  background-color: #357abD;
-}
-
-
 @media (min-width: 768px) {
   .call-us-link {
     position: fixed;
@@ -251,10 +303,7 @@ form button:hover {
     padding-left: 0; /* Remove left padding */
     padding-right: 0; /* Remove right padding */
   }
-  .container, .row {
-    padding-left: 0; /* Remove left padding */
-    padding-right: 0; /* Remove right padding */
-  }
+
 
   .call-us-link {
     position: fixed;
@@ -269,6 +318,9 @@ form button:hover {
   }
   .title{
 margin-top: 5px;
+  }
+  .card{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 300%);
   }
 }
 }

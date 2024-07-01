@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
 import ContactFooter from './components/ContactFooter';
-import Jumbotron from './components/Jumbotron';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -14,7 +14,6 @@ function App() {
   return (
     < >
       <Navbar />
-      <Jumbotron />
       <Banner/>
       <main className="mx-3" >
         <Outlet />

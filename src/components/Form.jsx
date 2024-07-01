@@ -35,7 +35,7 @@ function Form() {
   </div>
 
   <div data-mdb-input-init className="form-outline mb-4">
-    <textarea className="form-control" id="form4Example3" rows="4"></textarea>
+    <textarea type="text" className="form-control" id="form4Example3" rows="4"></textarea>
     <label className="form-label" for="form4Example3">Message</label>
   </div>
 
