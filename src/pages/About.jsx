@@ -1,7 +1,10 @@
-
+import { useEffect } from 'react';
 import '../components/style.css';
 
 export default function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="card">
@@ -9,11 +12,11 @@ export default function About() {
         
         <div className="container-products">
           <div className="row">
-            <div className="col-md-6 col-lg-4">
+            <div className="col-md-6 col-lg-4 product-main">
               <div id="pure-clay">
                 <div className="card-products" style={{ width: '18rem' }}>
                   <img
-                    src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp"
+                    src="https://as2.ftcdn.net/v2/jpg/01/87/01/11/1000_F_187011119_tC8i7evzhgcAiEDoZzKIfIJ6iIzZQ5RA.jpg"
                     className="card-img-top"
                     alt="Sunset Over the Sea"
                   />
@@ -31,11 +34,11 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4">
+            <div className="col-md-6 col-lg-4 product-main">
               <div id="top-soil">
                 <div className="card-products" style={{ width: '18rem' }}>
                   <img
-                    src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoTELJwBHFWDbK1gBmITKVP9IKM-Djfw2nTw&s"
                     className="card-img-top"
                     alt="Sunset Over the Sea"
                   />
@@ -53,11 +56,11 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4">
+            <div className="col-md-6 col-lg-4 product-main">
               <div id="clay">
                 <div className="card-products" style={{ width: '18rem' }}>
                   <img
-                    src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7hGDAXpMRmZbIOb9uZGY2gxbLdQ84R0DhBA&s"
                     className="card-img-top"
                     alt="Sunset Over the Sea"
                   />
@@ -84,7 +87,7 @@ export default function About() {
       <div>
         <div className="card mb-3">
           <div className="row g-0">
-            <div className="col-md-4">
+            <div className="col-md-4 product-cards">
               <h1>Pure Clay</h1>
               <img
                 src="https://as2.ftcdn.net/v2/jpg/01/87/01/11/1000_F_187011119_tC8i7evzhgcAiEDoZzKIfIJ6iIzZQ5RA.jpg"
@@ -166,7 +169,7 @@ export default function About() {
       <div>
         <div className="card mb-3">
           <div className="row g-0">
-            <div className="col-md-4">
+            <div className="col-md-4 product-cards">
               <h1>Top Soil</h1>
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu0w8qvu8LhkJgbcNhQCYa87zX8h45qQMRRQ&s"
@@ -248,7 +251,7 @@ export default function About() {
       <div>
         <div className="card mb-3">
           <div className="row g-0">
-            <div className="col-md-4">
+            <div className="col-md-4 product-cards">
             <h1>Clay 60/40</h1>
               <img
                 src="https://141505571.cdn6.editmysite.com/uploads/1/4/1/5/141505571/s878442499453600746_p2_i1_w1280.jpeg"

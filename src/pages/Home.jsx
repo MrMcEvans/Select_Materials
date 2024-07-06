@@ -82,35 +82,35 @@ export default function Home() {
               <p>We offer a wide range of products including:</p>
               <ul className='list-group list-group-light'>
                 <ul className="list-group-item"><Link
-                  to="/About"
+                  to="/About#"
                   className="btn btn-dark"
                   role="button"
                 >
                   <strong>Clay</strong>
                 </Link></ul>
                 <ul className="list-group-item"><Link
-                  to="/About"
+                  to="/About#"
                   className="btn btn-dark"
                   role="button"
                 >
                   <strong>Clay 60/40</strong>
                 </Link></ul>
                 <ul className="list-group-item"><Link
-                  to="/About"
+                  to="/About#"
                   className="btn btn-dark"
                   role="button"
                 >
                   <strong>Top Soil</strong>
                 </Link></ul>
                 <ul className="list-group-item"><Link
-                  to="/About"
+                  to="/About#"
                   className="btn btn-dark"
                   role="button"
                 >
                   <strong>Sand</strong>
                 </Link></ul>
                 <ul className="list-group-item"><Link
-                  to="/About"
+                  to="/About#"
                   className="btn btn-dark"
                   role="button"
                 >

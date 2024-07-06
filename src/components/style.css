@@ -29,6 +29,7 @@
 .products-p{
   margin-top: 20px;
 }
+
 /* Form */
 .form {
     display: flex;
@@ -250,7 +251,7 @@ li strong{
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
 }
-@media (min-width: 768px) {
+@media (min-width: 901px) {
   .call-us-link {
     position: fixed;
     right: 20px; /* Adjust as needed */
@@ -290,12 +291,12 @@ li strong{
   }
 
 }
-@media (max-width: 767px){
+@media (max-width: 900px){
   .img-fluid {
     max-width: 60%; /* Adjust the size as needed for mobile */
     max-height: 60%
   }
-  @media (max-width: 767px){
+  @media (max-width: 900px){
   .img-fluid {
     max-width: 60%; /* Adjust the size as needed for mobile */
     max-height: 60%
@@ -326,6 +327,29 @@ margin-top: 5px;
   }
   .card{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 300%);
+  }
+  .product-cards img {
+    display: none;
+  }
+  .product-main {
+    width: 60%; /* Adjust the width as needed */
+    padding: 1rem; /* Smaller padding */
+    margin-bottom: 1rem; /* More space between cards */
+    max-height: 60%;
+    height: 300px; /* Fixed height for all cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .product-main img {
+    width: 100%; /* Ensure image covers the full width of the card */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover the area without stretching */
+  }
+  
+  .product-main .card-products {
+    font-size: 0.8rem; /* Smaller text */
   }
 }
 }
