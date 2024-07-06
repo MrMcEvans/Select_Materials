@@ -251,11 +251,17 @@ li strong{
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
 }
+
 @media (min-width: 901px) {
+  .product-main .card-img-top {
+    width: 100%; /* Full width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Cover the area nicely */
+  }
   .call-us-link {
     position: fixed;
     right: 20px; /* Adjust as needed */
-    top: 20px; /* Adjust as needed */
+    top: 20px; 
     z-index: 1000; /* Ensure it's above other content */
     font-size: 20px;
     border: 0;

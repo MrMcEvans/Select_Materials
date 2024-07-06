@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import '../components/style.css';
+import { Link } from 'react-router-dom'
 
 export default function About() {
   useEffect(() => {
@@ -9,7 +10,7 @@ export default function About() {
     <div>
       <div className="card">
         <h2 className="card-title">Products We Offer</h2>
-        
+
         <div className="container-products">
           <div className="row">
             <div className="col-md-6 col-lg-4 product-main">
@@ -77,9 +78,74 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              
+
             </div>
-            
+            <div className="col-md-6 col-lg-4 product-main">
+              <div id="sand">
+                <div className="card-products" style={{ width: '18rem' }}>
+                  <img
+                    src="https://2.wlimg.com/product_images/bc-full/2019/11/4192024/construction-sand-1573714612-5154504.jpeg"
+                    className="card-img-top"
+                    alt="Sunset Over the Sea"
+                  />
+                  <div className="card-body">
+                    <h5>Sand</h5>
+
+                    <a
+                      href="#sand-description"
+                      className="btn btn-dark"
+                      role="button"
+                    >
+                      More Info
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4 product-main">
+              <div id="lime-stabilized">
+                <div className="card-products" style={{ width: '18rem' }}>
+                  <img
+                    src="https://i0.wp.com/theconstructor.org/wp-content/uploads/2018/12/Soil-Lime-Stabilization.jpg?fit=897%2C575&ssl=1"
+                    className="card-img-top"
+                    alt="Sunset Over the Sea"
+                  />
+                  <div className="card-body">
+                    <h5>Lime Stabilized Soil</h5>
+
+                    <a
+                      href="#lime-description"
+                      className="btn btn-dark"
+                      role="button"
+                    >
+                      More Info
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4 product-main">
+              <div id="delivery">
+                <div className="card-products" style={{ width: '18rem' }}>
+                  <img
+                    src="https://img.freepik.com/premium-photo/dusk-blue-dump-truck-moves-across-building-site-covered-dust-dirt_1043470-4015.jpg"
+                    className="card-img-top"
+                    alt="Sunset Over the Sea"
+                  />
+                  <div className="card-body">
+                    <h5>Delivery</h5>
+
+                    <a
+                      href="#delivery-description"
+                      className="btn btn-dark"
+                      role="button"
+                    >
+                      More Info
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -112,19 +178,9 @@ export default function About() {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-              <br />
-              <br />
-                <p>
-                  Pure clay is a fine-grained natural soil material renowned for
-                  its plasticity and cohesiveness, making it indispensable in
-                  various construction applications. It offers excellent
-                  moldability when wet and solid structural integrity when dry,
-                  which are essential properties for building materials like
-                  bricks, tiles, and earthen structures.
-                </p>
 
                 <h4>
-                  <strong>Why Choose Our Top Soil:</strong>
+                  <strong>Why Choose Our Clay:</strong>
                 </h4>
                 <p>
                   At Select Materials, we provide only the highest quality pure
@@ -146,20 +202,13 @@ export default function About() {
                     size and composition for reliable results every time.
                   </li>
                 </ul>
-                <p>
-                  Our commitment to quality ensures that you receive pure clay
-                  that meets the highest standards, enhancing the longevity and
-                  strength of your construction projects. Choose Select
-                  Materials for reliable, top-grade pure clay that supports your
-                  building success.
-                </p>
-                <a
-                href="/Contact"
-                className="btn btn-dark"
-                data-mdb-ripple-init
-              >
-                Contact For a Quote
-              </a>
+                <Link
+                  to="/Contact"
+                  className="btn btn-secondary btn-lg"
+                  role='button'
+                >
+                  Contact For A Quote
+                </Link>
               </div>
             </div>
           </div>
@@ -194,24 +243,14 @@ export default function About() {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-              <br />
-              <br />
-                <p>
-                  Top soil is the uppermost layer of soil, rich in organic
-                  matter and nutrients, essential for landscaping, gardening,
-                  and various construction applications. It provides a fertile
-                  base for plant growth, improving soil structure and stability
-                  in construction projects.
-                </p>
 
                 <h4>
-                  <strong>Why Choose Our Pure Clay:</strong>
+                  <strong>Why Choose Our Top Soil:</strong>
                 </h4>
                 <p>
-                  At Select Materials, we provide only the highest quality pure
-                  clay, meticulously sourced and processed to ensure superior
-                  performance in your construction projects. Our pure clay
-                  boasts:
+                  At Select Materials, we provide only the best Topsoil to support healthy root
+                  development and is commonly used in gardening, landscaping, and agricultural
+                  applications. Our topsoil includes:
                 </p>
                 <ul className="list-group list-group-light">
                   <li className="list-group-item">
@@ -230,18 +269,13 @@ export default function About() {
                     development and soil stability.
                   </li>
                 </ul>
-                <p>
-                  Trust Select Materials for top soil that enhances your
-                  construction and landscaping projects with reliability and
-                  excellence.
-                </p>
-                <a
-                href="/Contact"
-                className="btn btn-dark"
-                data-mdb-ripple-init
-              >
-                Contact For a Quote
-              </a>
+                <Link
+                  to="/Contact"
+                  className="btn btn-secondary btn-lg"
+                  role='button'
+                >
+                  Contact For A Quote
+                </Link>
               </div>
             </div>
           </div>
@@ -252,7 +286,7 @@ export default function About() {
         <div className="card mb-3">
           <div className="row g-0">
             <div className="col-md-4 product-cards">
-            <h1>Clay 60/40</h1>
+              <h1>Clay 60/40</h1>
               <img
                 src="https://141505571.cdn6.editmysite.com/uploads/1/4/1/5/141505571/s878442499453600746_p2_i1_w1280.jpeg"
                 alt="Trendy Pants and Shoes"
@@ -276,17 +310,6 @@ export default function About() {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <br />
-                <br />
-                
-                <p>
-                  Clay 60/40 is a blended soil mixture containing 60% clay and
-                  40% sand. This combination leverages the cohesive properties
-                  of clay and the drainage benefits of sand, making it ideal for
-                  various construction and landscaping applications. It provides
-                  excellent stability and compaction while ensuring adequate
-                  drainage and aeration.
-                </p>
 
                 <h4>
                   <strong>Why Choose Our Clay 60/40:</strong>
@@ -312,23 +335,186 @@ export default function About() {
                     requiring firm, stable, and well-drained soil.
                   </li>
                 </ul>
+                <Link
+                  to="/Contact"
+                  className="btn btn-secondary btn-lg"
+                  role='button'
+                >
+                  Contact For A Quote
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br id="sand-description" />
+      <div>
+        <div className="card mb-3">
+          <div className="row g-0">
+            <div className="col-md-4 product-cards">
+              <h1>Sand</h1>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu0w8qvu8LhkJgbcNhQCYa87zX8h45qQMRRQ&s"
+                alt="Trendy Pants and Shoes"
+                className="img-fluid rounded-start"
+              />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoTELJwBHFWDbK1gBmITKVP9IKM-Djfw2nTw&s"
+                alt="Trendy Pants and Shoes"
+                className="img-fluid rounded-start"
+              />
+              <img
+                src="https://cdn-hilheod.nitrocdn.com/JuqznVPRCSzDlcsSbyZjleLOZwzDpSBy/assets/images/optimized/rev-8274063/www.landscapemulch.com/wp-content/uploads/2023/09/Fall-and-Winter-Topsoil-Strategies-Nurturing-Your-Garden-Through-the-Chill-1080x675.jpg"
+                alt="Trendy Pants and Shoes"
+                className="img-fluid rounded-start"
+              />
+              <img
+                src="https://plantforsuccess.com/wp-content/uploads/2019/08/top-dressing-lawn.jpg"
+                alt="Trendy Pants and Shoes"
+                className="img-fluid rounded-start"
+              />
+            </div>
+            <div className="col-md-8">
+              <div className="card-body">
+
+                <h4>
+                  <strong>Why Choose Our Sand:</strong>
+                </h4>
                 <p>
-                  Choose Select Materials for superior Clay 60/40 that enhances
-                  the quality and durability of your construction and
-                  landscaping projects.
+                  Sand is a crucial component in the construction industry, used for various applications including concrete, mortar, plaster, and paving. Its properties make it ideal for providing strength, durability, and stability to building structures.
                 </p>
-                <a
-                href="/Contact"
-                className="btn btn-dark"
-                data-mdb-ripple-init
-              >
-                Contact For a Quote
-              </a>
+                <ul className="list-group list-group-light">
+                  <li className="list-group-item">
+                    <strong>High Purity and Quality:</strong> Our sand is meticulously sourced and processed to ensure it is free from harmful impurities like clay, silt, and organic matter. This guarantees the integrity and strength of your construction projects.
+                  </li>
+                  <li className="list-group-item">
+                    <strong>Cost Effective:</strong> By providing top-quality sand that reduces waste and enhances construction quality, we offer a cost-effective solution for your projects.
+                  </li>
+                  <li className="list-group-item">
+                    <strong>Eco-Friendly:</strong> Our sand is sourced responsibly, with minimal environmental impact, aligning with sustainable construction practices.
+                  </li>
+                </ul>
+                <Link
+                  to="/Contact"
+                  className="btn btn-secondary btn-lg"
+                  role='button'
+                >
+                  Contact For A Quote
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br id="lime-description" />
+      <div>
+        <div className="card mb-3">
+          <div className="row g-0">
+            <div className="col-md-4 product-cards">
+              <h1>Lime Stabilized Soil</h1>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu0w8qvu8LhkJgbcNhQCYa87zX8h45qQMRRQ&s"
+                alt="Trendy Pants and Shoes"
+                className="img-fluid rounded-start"
+              />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoTELJwBHFWDbK1gBmITKVP9IKM-Djfw2nTw&s"
+                alt="Trendy Pants and Shoes"
+                className="img-fluid rounded-start"
+              />
+              <img
+                src="https://cdn-hilheod.nitrocdn.com/JuqznVPRCSzDlcsSbyZjleLOZwzDpSBy/assets/images/optimized/rev-8274063/www.landscapemulch.com/wp-content/uploads/2023/09/Fall-and-Winter-Topsoil-Strategies-Nurturing-Your-Garden-Through-the-Chill-1080x675.jpg"
+                alt="Trendy Pants and Shoes"
+                className="img-fluid rounded-start"
+              />
+              <img
+                src="https://plantforsuccess.com/wp-content/uploads/2019/08/top-dressing-lawn.jpg"
+                alt="Trendy Pants and Shoes"
+                className="img-fluid rounded-start"
+              />
+            </div>
+            <div className="col-md-8">
+              <div className="card-body">
+
+                <h4>
+                  <strong>Why Choose Our Lime Soil:</strong>
+                </h4>
+                <p>At Select Materials, Lime stabilized soil is high quality and enhances load-bearing capacity, making
+                  it suitable for various construction applications such as road bases, embankments, and
+                  foundations.</p>
+                <ul className="list-group list-group-light">
+                  <li className="list-group-item">
+                    <strong>High-Quality Materials:</strong> We use high-grade lime and carefully selected soils, ensuring consistent and reliable results in all your construction applications.
+                  </li>
+                  <li className="list-group-item">
+                    <strong>Superior Strength and Durability:</strong> Our lime stabilized soil provides enhanced structural integrity and long-lasting performance, ensuring stable and resilient construction projects.
+                  </li>
+                  <li className="list-group-item">
+                    <strong>Optimized Soil Properties:</strong> Our product reduces soil plasticity and increases load-bearing capacity, making it ideal for supporting heavy structures and roadways.
+                  </li>
+                </ul>
+                <Link
+                  to="/Contact"
+                  className="btn btn-secondary btn-lg"
+                  role='button'
+                >
+                  Contact For A Quote
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br id="delivery-description" />
+      <div>
+        <div className="card mb-3">
+          <div className="row g-0">
+            <div className="col-md-4 product-cards">
+              <h1>Delivery</h1>
+              <img
+                src="https://as2.ftcdn.net/v2/jpg/01/87/01/11/1000_F_187011119_tC8i7evzhgcAiEDoZzKIfIJ6iIzZQ5RA.jpg"
+                alt="Trendy Pants and Shoes"
+                className="img-fluid rounded-start"
+              />
+              <img
+                src="https://cdn4.volusion.store/pycz3-5je7j/v/vspfiles/photos/RMBBM-2.jpg?v-cache=1675932769"
+                alt="Trendy Pants and Shoes"
+                className="img-fluid rounded-start"
+              />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdVyxAWgVSGlhWTbqCoX2YVGuJNMWQEgfwYg&s"
+                alt="Trendy Pants and Shoes"
+                className="img-fluid rounded-start"
+              />
+              <img
+                src="https://hnry.fi/wp-content/uploads/2021/04/shane-mclendon-EN1tF2EG-50-unsplash.jpg"
+                alt="Trendy Pants and Shoes"
+                className="img-fluid rounded-start"
+              />
+            </div>
+            <div className="col-md-8">
+              <div className="card-body">
+
+                <p>
+                  We are pleased to say thay your premium dirt is up for delivery from Select Materials.
+                  Whether it's topsoil, sand, or lime stabilized soil, our high-quality materials can be delivered straight to your site, ensuring your commercial projects are built on
+                  the best foundation available.
+                </p>
+                <p><strong>Let's build greatness together.</strong></p>
+                
+                <Link
+                  to="/Contact"
+                  className="btn btn-secondary btn-lg"
+                  role='button'
+                >
+                  Contact For A Quote
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
   );
 }
