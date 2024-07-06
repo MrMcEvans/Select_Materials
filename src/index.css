@@ -16,8 +16,7 @@
   } */ 
   .body {
     background-color: #000; /* Fallback color in case the image doesn't load */
-    background-image: url('https://us-east.storage.cloudconvert.com/tasks/7bf03afd-cef6-4625-b825-5b149ff65227/dark-background.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20240701%2Fva%2Fs3%2Faws4_request&X-Amz-Date=20240701T183934Z&X-Amz-Expires=86400&X-Amz-Signature=149682d22de85fe80604af4f4ff38d74fcfc0f78ede45c8f334b44bc5fb78525&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%3D"dark-background.png"&response-content-type=image%2Fpng&x-id=GetObject'); /* Corrected path to your pattern image */
-    background-repeat: repeat; /* Make the pattern repeat */
+    background-image: url(./assets/dark-background.png); /* Corrected path to your pattern image */
     background-attachment: fixed; /* Optional: keeps the background fixed during scroll */
   }
 

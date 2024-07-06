@@ -37,7 +37,7 @@ function ContactFooter() {
               <h6 className="text-uppercase fw-bold mb-4">
                 <i className="fas fa-gem me-3"></i>Select Materials
               </h6>
-              <h7>Port Arthur, TX</h7>
+              <h6>Port Arthur, TX</h6>
             </div>
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">

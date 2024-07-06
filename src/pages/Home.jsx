@@ -46,10 +46,10 @@ export default function Home() {
                 service.
               </p>
               <br />
+              <hr class="hr hr-blurry" />
+              <br className='' />
               <br />
-              <br />
-
-              <div className='card'>
+              <div className=''>
               <h2>Our Mission</h2>
               
               
@@ -62,10 +62,11 @@ export default function Home() {
               </p>
               </div>
               <br />
-              <br />
+              <hr class="hr hr-blurry" />
+              <br className='' />
               <br />
 
-              <div className='card'>
+              <div className=''>
               <h2>What Sets Us Apart</h2>
               <ul className='list-group'>
                 <li >
@@ -88,7 +89,8 @@ export default function Home() {
               </ul>
               </div>
               <br />
-              <br />
+              <br className='' />
+              <hr class="hr hr-blurry" />
               <br />
               
               <h2>Our Products</h2>
@@ -124,10 +126,11 @@ export default function Home() {
                 to get the job done right.
               </p>
               
+              
               <br />
+              <hr class="hr hr-blurry" />
               <br />
-              <br />
-              <div className='card'>
+              <div className=''>
               <h2>Contact Us</h2>
               <p>
                 We invite you to visit our facility, give us a call, or explore
