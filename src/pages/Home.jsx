@@ -1,6 +1,7 @@
 import React from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import Jumbotron from '../components/Jumbotron';
+import { Link } from 'react-router-dom';
 
 const containerStyle = {
   width: '100%',
@@ -80,41 +81,41 @@ export default function Home() {
               <h2>Our Products</h2>
               <p>We offer a wide range of products including:</p>
               <ul className='list-group list-group-light'>
-                <ul className="list-group-item"><a
-                  href="/About"
+                <ul className="list-group-item"><Link
+                  to="/About"
                   className="btn btn-dark"
                   role="button"
                 >
-                  <strong>Pure Clay</strong>
-                </a></ul>
-                <ul className="list-group-item"><a
-                  href="/About"
-                  className="btn btn-dark"
-                  role="button"
-                >
-                  <strong>Top Soil</strong>
-                </a></ul>
-                <ul className="list-group-item"><a
-                  href="/About"
+                  <strong>Clay</strong>
+                </Link></ul>
+                <ul className="list-group-item"><Link
+                  to="/About"
                   className="btn btn-dark"
                   role="button"
                 >
                   <strong>Clay 60/40</strong>
-                </a></ul>
-                <ul className="list-group-item"><a
-                  href="/About"
+                </Link></ul>
+                <ul className="list-group-item"><Link
+                  to="/About"
+                  className="btn btn-dark"
+                  role="button"
+                >
+                  <strong>Top Soil</strong>
+                </Link></ul>
+                <ul className="list-group-item"><Link
+                  to="/About"
                   className="btn btn-dark"
                   role="button"
                 >
                   <strong>Sand</strong>
-                </a></ul>
-                <ul className="list-group-item"><a
-                  href="/About"
+                </Link></ul>
+                <ul className="list-group-item"><Link
+                  to="/About"
                   className="btn btn-dark"
                   role="button"
                 >
                   <strong>Lime Stabilized Soil</strong>
-                </a></ul>
+                </Link></ul>
 
               </ul>
 
@@ -139,14 +140,13 @@ export default function Home() {
                   Thank you for choosing Select Materials. We look forward to
                   serving you!
                 </p>
-                <a
-                  href="/About"
+                <Link
+                  to="/Contact"
                   className="btn btn-secondary btn-lg"
-                  data-mdb-ripple-init
                   role='button'
                 >
                   Contact For A Quote
-                </a>
+                </Link>
               </div>
             </div>
           </div>
