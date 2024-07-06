@@ -33,10 +33,10 @@ export default function Home() {
       <div className="home-card">
         <section className="wrap">
           <div className="card">
-            <h1 className="card-title">Who are we?</h1>
+            <h1 className="card-title">Who We Are</h1>
             <div className="card-body">
-              
-                <h2>Welcome to Select Materials</h2>
+
+              <h2>Welcome to Select Materials</h2>
               <p>
                 Located in the heart of Port Arthur, TX, Select Materials has
                 been a trusted provider of high-quality soil, gravel, and
@@ -49,111 +49,110 @@ export default function Home() {
               <hr class="hr hr-blurry" />
               <br className='' />
               <br />
-              <div className=''>
-              <h2>Our Mission</h2>
-              
-              
-              <p>
-                Our mission is to provide the best materials and services to
-                help our customers create beautiful, sustainable, and functional
-                outdoor spaces. We believe in building long-term relationships
-                based on trust, quality, and reliability.
-                
-              </p>
-              </div>
-              <br />
-              <hr class="hr hr-blurry" />
-              <br className='' />
-              <br />
 
               <div className=''>
-              <h2>What Sets Us Apart</h2>
-              <ul className='list-group'>
-                <li >
-                  <strong>Quality Products:</strong> We source only the best
-                  materials to ensure your projects are built to last.
-                </li >
-                <li >
-                  <strong>Expertise:</strong> Our knowledgeable team is here to
-                  offer advice and assistance tailored to your specific needs.
-                </li>
-                <li >
-                  <strong>Customer Satisfaction:</strong> We are committed to
-                  exceeding your expectations with every interaction.
-                </li >
-                <li >
-                  <strong>Local Focus:</strong> As a locally owned and operated
-                  business, we take pride in contributing to the community and
-                  supporting local projects.
-                </li>
-              </ul>
+                <h2><strong>What Sets Us Apart</strong></h2>
+                <ul className='list-group'>
+                  <li >
+                    <strong>Quality Products:</strong> We source only the best
+                    materials to ensure your projects are built to last.
+                  </li >
+                  <li >
+                    <strong>Expertise:</strong> Our knowledgeable team is here to
+                    offer advice and assistance tailored to your specific needs.
+                  </li>
+                  <li >
+                    <strong>Customer Satisfaction:</strong> We are committed to
+                    exceeding your expectations with every interaction.
+                  </li >
+                  <li >
+                    <strong>Local Focus:</strong> As a locally owned and operated
+                    business, we take pride in contributing to the community and
+                    supporting local projects.
+                  </li>
+                </ul>
               </div>
               <br />
               <br className='' />
               <hr class="hr hr-blurry" />
               <br />
-              
+
               <h2>Our Products</h2>
               <p>We offer a wide range of products including:</p>
               <ul className='list-group list-group-light'>
                 <ul className="list-group-item"><a
-                      href="/About"
-                      className="btn btn-dark"
-                      role="button"
-                    >
-                      <strong>Pure Clay</strong>
-                    </a></ul>
+                  href="/About"
+                  className="btn btn-dark"
+                  role="button"
+                >
+                  <strong>Pure Clay</strong>
+                </a></ul>
                 <ul className="list-group-item"><a
-                      href="/About"
-                      className="btn btn-dark"
-                      role="button"
-                    >
-                      <strong>Top Soil</strong>
-                    </a></ul>
+                  href="/About"
+                  className="btn btn-dark"
+                  role="button"
+                >
+                  <strong>Top Soil</strong>
+                </a></ul>
                 <ul className="list-group-item"><a
-                      href="/About"
-                      className="btn btn-dark"
-                      role="button"
-                    >
-                      <strong>Clay 60/40</strong>
-                    </a></ul>
-                
+                  href="/About"
+                  className="btn btn-dark"
+                  role="button"
+                >
+                  <strong>Clay 60/40</strong>
+                </a></ul>
+                <ul className="list-group-item"><a
+                  href="/About"
+                  className="btn btn-dark"
+                  role="button"
+                >
+                  <strong>Sand</strong>
+                </a></ul>
+                <ul className="list-group-item"><a
+                  href="/About"
+                  className="btn btn-dark"
+                  role="button"
+                >
+                  <strong>Lime Stabilized Soil</strong>
+                </a></ul>
+
               </ul>
-              
-              <p>
+
+              <p className='products-p'>
                 Whether you are working on a small garden or a large
                 construction project, Select Materials has the supplies you need
                 to get the job done right.
               </p>
-              
-              
+
+
               <br />
               <hr class="hr hr-blurry" />
               <br />
               <div className=''>
-              <h2>Contact Us</h2>
-              <p>
-                We invite you to visit our facility, give us a call, or explore
-                our website to learn more about our products and services. Our
-                team is here to help you every step of the way.
-              </p>
-              <p>
-                Thank you for choosing Select Materials. We look forward to
-                serving you!
-              </p>
-              <a
-                href="/Contact"
-                className="btn btn-secondary btn-lg"
-                data-mdb-ripple-init
-              >
-                Contact For A Quote
-              </a>
+                <h2>Contact Us</h2>
+                <p>
+                  Please give us a call, or explore
+                  our website to learn more about our products and services. Our
+                  team is here to help you every step of the way.
+                </p>
+                <p>
+                  Thank you for choosing Select Materials. We look forward to
+                  serving you!
+                </p>
+                <a
+                  href="/About"
+                  className="btn btn-secondary btn-lg"
+                  data-mdb-ripple-init
+                  role='button'
+                >
+                  Contact For A Quote
+                </a>
               </div>
             </div>
           </div>
           <p></p>
         </section>
-        
+
         <br />
         <br />
         <br />

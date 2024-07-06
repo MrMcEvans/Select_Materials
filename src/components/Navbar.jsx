@@ -52,7 +52,7 @@ function NavTabs() {
             </NavDropdown.Item>
           </Nav>
         </Navbar.Collapse>
-        <a href="tel:+1234567890" className="nav-item nav-link call-us-link">
+        <a href="tel:+14099601589" className="nav-item nav-link call-us-link">
           <FontAwesomeIcon icon={faPhone} />
         </a>
       </Navbar>
