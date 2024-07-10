@@ -16,7 +16,11 @@ export default function About() {
             <div className="col-md-6 col-lg-4 product-main">
               <div id="pure-clay">
                 <div className="card-products" style={{ width: '18rem' }}>
-
+                  <img
+                    src="https://as2.ftcdn.net/v2/jpg/01/87/01/11/1000_F_187011119_tC8i7evzhgcAiEDoZzKIfIJ6iIzZQ5RA.jpg"
+                    className="card-img-top"
+                    alt="Sunset Over the Sea"
+                  />
                   <div className="card-body">
                     <h5>Pure Clay</h5>
 
@@ -34,7 +38,11 @@ export default function About() {
             <div className="col-md-6 col-lg-4 product-main">
               <div id="top-soil">
                 <div className="card-products" style={{ width: '18rem' }}>
-
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoTELJwBHFWDbK1gBmITKVP9IKM-Djfw2nTw&s"
+                    className="card-img-top"
+                    alt="Sunset Over the Sea"
+                  />
                   <div className="card-body">
                     <h5>Top Soil</h5>
 
@@ -52,7 +60,11 @@ export default function About() {
             <div className="col-md-6 col-lg-4 product-main">
               <div id="clay">
                 <div className="card-products" style={{ width: '18rem' }}>
-
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7hGDAXpMRmZbIOb9uZGY2gxbLdQ84R0DhBA&s"
+                    className="card-img-top"
+                    alt="Sunset Over the Sea"
+                  />
                   <div className="card-body">
                     <h5>Clay 60/40</h5>
 
@@ -71,7 +83,11 @@ export default function About() {
             <div className="col-md-6 col-lg-4 product-main">
               <div id="sand">
                 <div className="card-products" style={{ width: '18rem' }}>
-
+                  <img
+                    src="https://2.wlimg.com/product_images/bc-full/2019/11/4192024/construction-sand-1573714612-5154504.jpeg"
+                    className="card-img-top"
+                    alt="Sunset Over the Sea"
+                  />
                   <div className="card-body">
                     <h5>Sand</h5>
 
@@ -89,7 +105,11 @@ export default function About() {
             <div className="col-md-6 col-lg-4 product-main">
               <div id="lime-stabilized">
                 <div className="card-products" style={{ width: '18rem' }}>
-
+                  <img
+                    src="https://i0.wp.com/theconstructor.org/wp-content/uploads/2018/12/Soil-Lime-Stabilization.jpg?fit=897%2C575&ssl=1"
+                    className="card-img-top"
+                    alt="Sunset Over the Sea"
+                  />
                   <div className="card-body">
                     <h5>Lime Stabilized Soil</h5>
 
@@ -107,7 +127,11 @@ export default function About() {
             <div className="col-md-6 col-lg-4 product-main">
               <div id="delivery">
                 <div className="card-products" style={{ width: '18rem' }}>
-
+                  <img
+                    src="https://img.freepik.com/premium-photo/dusk-blue-dump-truck-moves-across-building-site-covered-dust-dirt_1043470-4015.jpg"
+                    className="card-img-top"
+                    alt="Sunset Over the Sea"
+                  />
                   <div className="card-body">
                     <h5>Delivery</h5>
 
