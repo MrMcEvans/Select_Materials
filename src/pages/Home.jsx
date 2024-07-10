@@ -116,6 +116,13 @@ export default function Home() {
                 >
                   <strong>Lime Stabilized Soil</strong>
                 </Link></ul>
+                <ul className="list-group-item"><Link
+                  to="/About#"
+                  className="btn btn-dark"
+                  role="button"
+                >
+                  <strong>Delivery</strong>
+                </Link></ul>
 
               </ul>
 
