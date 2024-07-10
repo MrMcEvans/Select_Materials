@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import '../components/style.css';
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 
 export default function About() {
   useEffect(() => {
@@ -24,13 +25,13 @@ export default function About() {
                   <div className="card-body">
                     <h5>Pure Clay</h5>
 
-                    <a
-                      href="#pure-clay-description"
+                    <HashLink
+                      to="/About/#pure-clay-description"
                       className="btn btn-dark"
                       role="button"
                     >
                       More Info
-                    </a>
+                    </HashLink>
                   </div>
                 </div>
               </div>
@@ -46,13 +47,13 @@ export default function About() {
                   <div className="card-body">
                     <h5>Top Soil</h5>
 
-                    <a
-                      href="#top-soil-description"
+                    <HashLink
+                      to="/About/#top-soil-description"
                       className="btn btn-dark"
                       role="button"
                     >
                       More Info
-                    </a>
+                    </HashLink>
                   </div>
                 </div>
               </div>
@@ -68,13 +69,13 @@ export default function About() {
                   <div className="card-body">
                     <h5>Clay 60/40</h5>
 
-                    <a
-                      href="#clay-60-40"
+                    <HashLink
+                      to="/About/#clay-60-40"
                       className="btn btn-dark"
                       role="button"
                     >
                       More Info
-                    </a>
+                    </HashLink>
                   </div>
                 </div>
               </div>
@@ -91,13 +92,13 @@ export default function About() {
                   <div className="card-body">
                     <h5>Sand</h5>
 
-                    <a
-                      href="#sand-description"
+                    <HashLink
+                      to="/About/#sand-description"
                       className="btn btn-dark"
                       role="button"
                     >
                       More Info
-                    </a>
+                    </HashLink>
                   </div>
                 </div>
               </div>
@@ -113,13 +114,13 @@ export default function About() {
                   <div className="card-body">
                     <h5>Lime Stabilized Soil</h5>
 
-                    <a
-                      href="#lime-description"
+                    <HashLink
+                      to="/About/#lime-description"
                       className="btn btn-dark"
                       role="button"
                     >
                       More Info
-                    </a>
+                    </HashLink>
                   </div>
                 </div>
               </div>
@@ -135,13 +136,13 @@ export default function About() {
                   <div className="card-body">
                     <h5>Delivery</h5>
 
-                    <a
-                      href="#delivery-description"
+                    <HashLink
+                      to="/About/#delivery-description"
                       className="btn btn-dark"
                       role="button"
                     >
                       More Info
-                    </a>
+                    </HashLink>
                   </div>
                 </div>
               </div>
