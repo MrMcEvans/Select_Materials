@@ -6,12 +6,19 @@ function Form() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [sendCopy, setSendCopy] = useState(false);
 
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    if (name === 'name') setName(value);
-    else if (name === 'email') setEmail(value);
-    else if (name === 'message') setMessage(value);
+    const { name, value, type, checked } = e.target;
+    if (type === 'checkbox') {
+      setSendCopy(checked);
+    } else if (name === 'name') {
+      setName(value);
+    } else if (name === 'email') {
+      setEmail(value);
+    } else if (name === 'message') {
+      setMessage(value);
+    }
   };
 
   const handleFormSubmit = (e) => {
@@ -23,12 +30,26 @@ function Form() {
       message: message,
     };
 
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'YOUR_USER_ID')
+    emailjs.send('service_ktxpnmk', 'template_ocp1h9n', templateParams, 'yPkFvDdQnjuHdwbZh')
       .then((response) => {
         alert('Email sent successfully!');
         setName('');
         setEmail('');
         setMessage('');
+
+        if (sendCopy) {
+          // Send a copy to the user's email
+          emailjs.send('service_ktxpnmk', 'template_vljnf68', {
+            ...templateParams,
+            to_email: email,
+          }, 'yPkFvDdQnjuHdwbZh')
+            .then((response) => {
+              alert('A copy of the email has been sent to you.');
+            })
+            .catch((error) => {
+              alert('Failed to send a copy of the email. Error: ' + JSON.stringify(error));
+            });
+        }
       })
       .catch((error) => {
         alert('Failed to send email. Error: ' + JSON.stringify(error));
@@ -37,7 +58,7 @@ function Form() {
 
   return (
     <div className='card form-card'>
-      <h2>Give us a <a href="tel:1+4099601589">call</a> or contact via form submission</h2>
+      <h1>Please <a href="tel:+14099601589" className='text-white'>CALL</a> us or fill out a submission form for a quote </h1>
       <form onSubmit={handleFormSubmit} style={{ width: 'auto' }}>
         <div data-mdb-input-init className="form-outline mb-4">
           <input
@@ -84,6 +105,8 @@ function Form() {
             className="form-check-input me-2"
             type="checkbox"
             id="form4Example4"
+            checked={sendCopy}
+            onChange={handleInputChange}
           />
           <label className="form-check-label" htmlFor="form4Example4">
             Send me a copy of this message
@@ -99,3 +122,5 @@ function Form() {
 }
 
 export default Form;
+
+
