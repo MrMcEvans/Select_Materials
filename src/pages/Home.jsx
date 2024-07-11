@@ -1,4 +1,3 @@
-import React from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import Jumbotron from '../components/Jumbotron';
 import { Link } from 'react-router-dom';
@@ -13,15 +12,21 @@ const center = {
   lng: -93.939949,
 };
 const markerPosition = {
-  lat: 29.884951, // Replace with the latitude of the marker
-  lng: -93.939949, // Replace with the longitude of the marker
+  lat: 29.929557, // Replace with the latitude of the marker
+  lng: -93.988127, // Replace with the longitude of the marker
 };
 
 function MyMapComponent() {
+  const handleMarkerClick = () => {
+    const address = '2570 Halbouty, Port Arthur, TX 77640';
+    const encodedAddress = encodeURIComponent(address);
+    const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
+    window.open(mapsUrl, '_blank');
+  };
   return (
     <LoadScript googleMapsApiKey="AIzaSyCOgrlyOC6bg6nncXVdJihSflA9XvKrtSc">
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
-        <Marker position={markerPosition} />
+      <Marker position={markerPosition} onClick={handleMarkerClick} />
       </GoogleMap>
     </LoadScript>
   );
@@ -47,7 +52,7 @@ export default function Home() {
                 service.
               </p>
               <br />
-              <hr class="hr hr-blurry" />
+              <hr className="hr hr-blurry" />
               <br className='' />
               <br />
 
@@ -75,7 +80,7 @@ export default function Home() {
               </div>
               <br />
               <br className='' />
-              <hr class="hr hr-blurry" />
+              <hr className="hr hr-blurry" />
               <br />
 
               <h2>Our Products</h2>
@@ -134,7 +139,7 @@ export default function Home() {
 
 
               <br />
-              <hr class="hr hr-blurry" />
+              <hr className="hr hr-blurry" />
               <br />
               <div className=''>
                 <h2>Contact Us</h2>

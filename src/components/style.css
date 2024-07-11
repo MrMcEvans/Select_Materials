@@ -49,8 +49,10 @@
     flex-direction: column;
     align-items: center;
 }
-  
-  
+
+.card-img, .card-img-top  {
+  border-radius: 0;
+}
 .form input {
   display: block;
   margin-top: 5px;

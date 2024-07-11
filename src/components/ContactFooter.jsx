@@ -1,5 +1,8 @@
 import './style.css';
 import { Link } from 'react-router-dom';
+import { SocialIcon } from 'react-social-icons'
+
+const Component = <SocialIcon url="https://twitter.com" />
 
 function ContactFooter() {
   return (
@@ -46,36 +49,33 @@ function ContactFooter() {
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Products</h6>
-              <p>
-                <Link to="/About" className="text-reset">
-                  Pure Clay
-                </Link>
-              </p>
-              <p>
-                <Link to="/About" className="text-reset">
-                  Top Soil
-                </Link>
-              </p>
-              <p>
-                <Link to="/About" className="text-reset">
-                  Clay 60/40
-                </Link>
-              </p>
-              <p>
-                <Link to="/About" className="text-reset">
-                  Sand
-                </Link>
-              </p>
-              <p>
-                <Link to="/About" className="text-reset">
-                  Lime Stabilized Soil
-                </Link>
-              </p>
-              <p>
-                <Link to="/About" className="text-reset">
-                  Delivery
-                </Link>
-              </p>
+              <ul className='list-group list-group-light'>
+    <li className='list-group-item'>
+      <Link to="/About" className="text-reset">
+        Pure Clay
+      </Link>
+    </li>
+    <li className='list-group-item'>
+      <Link to="/About" className="text-reset">
+        Top Soil
+      </Link>
+    </li>
+    <li className='list-group-item'>
+      <Link to="/About" className="text-reset">
+        Clay 60/40
+      </Link>
+    </li>
+    <li className='list-group-item'>
+      <Link to="/About" className="text-reset">
+        Sand
+      </Link>
+    </li>
+    <li className='list-group-item'>
+      <Link to="/About" className="text-reset">
+        Lime Stabilized Soil
+      </Link>
+    </li>
+  </ul>
             </div>
 
             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
