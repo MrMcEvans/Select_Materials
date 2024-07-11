@@ -1,15 +1,19 @@
 import './style.css';
+import { Link } from 'react-router-dom';
 
 function ContactFooter() {
   return (
-    <footer className="text-center text-lg-start bg-body-tertiary text-muted">
+    <footer className="text-center text-lg-start bg-body-tertiary text-muted contact-footer">
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <div className="me-5 d-none d-lg-block">
           <span>Get connected with us on social networks:</span>
         </div>
 
         <div>
-          <a href="https://www.facebook.com/SelectMaterialsPortArthur/" className="me-4 text-reset">
+          <a
+            href="https://www.facebook.com/SelectMaterialsPortArthur/"
+            className="me-4 text-reset"
+          >
             Facebook
           </a>
           <a href="#" className="me-4 text-reset">
@@ -43,19 +47,34 @@ function ContactFooter() {
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Products</h6>
               <p>
-                <a href="/About" className="text-reset">
+                <Link to="/About" className="text-reset">
                   Pure Clay
-                </a>
+                </Link>
               </p>
               <p>
-                <a href="/About" className="text-reset">
+                <Link to="/About" className="text-reset">
                   Top Soil
-                </a>
+                </Link>
               </p>
               <p>
-                <a href="/About" className="text-reset">
+                <Link to="/About" className="text-reset">
                   Clay 60/40
-                </a>
+                </Link>
+              </p>
+              <p>
+                <Link to="/About" className="text-reset">
+                  Sand
+                </Link>
+              </p>
+              <p>
+                <Link to="/About" className="text-reset">
+                  Lime Stabilized Soil
+                </Link>
+              </p>
+              <p>
+                <Link to="/About" className="text-reset">
+                  Delivery
+                </Link>
               </p>
             </div>
 
@@ -83,7 +102,12 @@ function ContactFooter() {
         </div>
       </section>
 
-      <div className="text-center p-4" style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}>Select Materials Port Arthur</div>
+      <div
+        className="text-center p-4"
+        style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}
+      >
+        ©Select Materials Port Arthur 2024
+      </div>
     </footer>
   );
 }

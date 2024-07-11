@@ -153,29 +153,15 @@ export default function About() {
       <br id="pure-clay-description" />
       <div>
         <div className="card mb-3">
-          <div className="row g-0">
+          <div className="row g-0 product-control">
             <div className="col-md-4 product-cards">
               <h1>Pure Clay</h1>
               <img
                 src="https://as2.ftcdn.net/v2/jpg/01/87/01/11/1000_F_187011119_tC8i7evzhgcAiEDoZzKIfIJ6iIzZQ5RA.jpg"
                 alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
+                className="img-added rounded-start"
               />
-              <img
-                src="https://cdn4.volusion.store/pycz3-5je7j/v/vspfiles/photos/RMBBM-2.jpg?v-cache=1675932769"
-                alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
-              />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdVyxAWgVSGlhWTbqCoX2YVGuJNMWQEgfwYg&s"
-                alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
-              />
-              <img
-                src="https://hnry.fi/wp-content/uploads/2021/04/shane-mclendon-EN1tF2EG-50-unsplash.jpg"
-                alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
-              />
+
             </div>
             <div className="col-md-8">
               <div className="card-body">
@@ -218,29 +204,16 @@ export default function About() {
       <br id="top-soil-description" />
       <div>
         <div className="card mb-3">
-          <div className="row g-0">
+          <div className="row g-0 product-control">
             <div className="col-md-4 product-cards">
               <h1>Top Soil</h1>
+
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu0w8qvu8LhkJgbcNhQCYa87zX8h45qQMRRQ&s"
+                src="https://le-cdn.hibuwebsites.com/35dd3b2e659b466cbe6769e5414062fc/dms3rep/multi/opt/shutterstock_604818800-1920w.jpg"
                 alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
+                className="img-added"
               />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoTELJwBHFWDbK1gBmITKVP9IKM-Djfw2nTw&s"
-                alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
-              />
-              <img
-                src="https://cdn-hilheod.nitrocdn.com/JuqznVPRCSzDlcsSbyZjleLOZwzDpSBy/assets/images/optimized/rev-8274063/www.landscapemulch.com/wp-content/uploads/2023/09/Fall-and-Winter-Topsoil-Strategies-Nurturing-Your-Garden-Through-the-Chill-1080x675.jpg"
-                alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
-              />
-              <img
-                src="https://plantforsuccess.com/wp-content/uploads/2019/08/top-dressing-lawn.jpg"
-                alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
-              />
+
             </div>
             <div className="col-md-8">
               <div className="card-body">
@@ -285,29 +258,15 @@ export default function About() {
       <br id="clay-60-40" />
       <div>
         <div className="card mb-3">
-          <div className="row g-0">
+          <div className="row g-0 product-control">
             <div className="col-md-4 product-cards">
               <h1>Clay 60/40</h1>
               <img
                 src="https://141505571.cdn6.editmysite.com/uploads/1/4/1/5/141505571/s878442499453600746_p2_i1_w1280.jpeg"
                 alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
+                className="img-added"
               />
-              <img
-                src="https://www.acmesand.com/wp-content/uploads/2015/09/RDIFMX-Red-Diamond-Infield-Mix-1024x714.jpg"
-                alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
-              />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7hGDAXpMRmZbIOb9uZGY2gxbLdQ84R0DhBA&s"
-                alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
-              />
-              <img
-                src="https://www.comarstrucking.com/s/img/emotionheader5057841.jpg?1413840496.920px.350px"
-                alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
-              />
+
             </div>
             <div className="col-md-8">
               <div className="card-body">
@@ -351,29 +310,15 @@ export default function About() {
       <br id="sand-description" />
       <div>
         <div className="card mb-3">
-          <div className="row g-0">
+          <div className="row g-0 product-control">
             <div className="col-md-4 product-cards">
               <h1>Sand</h1>
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu0w8qvu8LhkJgbcNhQCYa87zX8h45qQMRRQ&s"
+                src="https://img3.exportersindia.com/product_images/bc-full/2021/1/7406108/construction-sand-1610097892-5672918.jpeg"
                 alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
+                className="img-added rounded-start"
               />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoTELJwBHFWDbK1gBmITKVP9IKM-Djfw2nTw&s"
-                alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
-              />
-              <img
-                src="https://cdn-hilheod.nitrocdn.com/JuqznVPRCSzDlcsSbyZjleLOZwzDpSBy/assets/images/optimized/rev-8274063/www.landscapemulch.com/wp-content/uploads/2023/09/Fall-and-Winter-Topsoil-Strategies-Nurturing-Your-Garden-Through-the-Chill-1080x675.jpg"
-                alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
-              />
-              <img
-                src="https://plantforsuccess.com/wp-content/uploads/2019/08/top-dressing-lawn.jpg"
-                alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
-              />
+
             </div>
             <div className="col-md-8">
               <div className="card-body">
@@ -410,29 +355,15 @@ export default function About() {
       <br id="lime-description" />
       <div>
         <div className="card mb-3">
-          <div className="row g-0">
+          <div className="row g-0 product-control">
             <div className="col-md-4 product-cards">
               <h1>Lime Stabilized Soil</h1>
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu0w8qvu8LhkJgbcNhQCYa87zX8h45qQMRRQ&s"
+                src="https://i0.wp.com/theconstructor.org/wp-content/uploads/2018/12/Soil-Lime-Stabilization.jpg?fit=897%2C575&ssl=1"
                 alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
+                className="img-added rounded-start"
               />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoTELJwBHFWDbK1gBmITKVP9IKM-Djfw2nTw&s"
-                alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
-              />
-              <img
-                src="https://cdn-hilheod.nitrocdn.com/JuqznVPRCSzDlcsSbyZjleLOZwzDpSBy/assets/images/optimized/rev-8274063/www.landscapemulch.com/wp-content/uploads/2023/09/Fall-and-Winter-Topsoil-Strategies-Nurturing-Your-Garden-Through-the-Chill-1080x675.jpg"
-                alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
-              />
-              <img
-                src="https://plantforsuccess.com/wp-content/uploads/2019/08/top-dressing-lawn.jpg"
-                alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
-              />
+
             </div>
             <div className="col-md-8">
               <div className="card-body">
@@ -469,29 +400,15 @@ export default function About() {
       <br id="delivery-description" />
       <div>
         <div className="card mb-3">
-          <div className="row g-0">
+          <div className="row g-0 product-control">
             <div className="col-md-4 product-cards">
               <h1>Delivery</h1>
               <img
-                src="https://as2.ftcdn.net/v2/jpg/01/87/01/11/1000_F_187011119_tC8i7evzhgcAiEDoZzKIfIJ6iIzZQ5RA.jpg"
+                src="https://img.freepik.com/premium-photo/dusk-blue-dump-truck-moves-across-building-site-covered-dust-dirt_1043470-4015.jpg"
                 alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
+                className="img-added rounded-start"
               />
-              <img
-                src="https://cdn4.volusion.store/pycz3-5je7j/v/vspfiles/photos/RMBBM-2.jpg?v-cache=1675932769"
-                alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
-              />
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdVyxAWgVSGlhWTbqCoX2YVGuJNMWQEgfwYg&s"
-                alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
-              />
-              <img
-                src="https://hnry.fi/wp-content/uploads/2021/04/shane-mclendon-EN1tF2EG-50-unsplash.jpg"
-                alt="Trendy Pants and Shoes"
-                className="img-fluid rounded-start"
-              />
+
             </div>
             <div className="col-md-8">
               <div className="card-body">

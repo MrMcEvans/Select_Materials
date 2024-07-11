@@ -4,7 +4,20 @@
   src: url('../assets/HanzelThinBold.ttf');
 }
 
+.back-to-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #363636;
+  color: white;
+  border: none;
+  border-radius: 10%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  z-index: 1000;
 
+}
 /* Jumbotron */
 .jumbotron {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
@@ -129,9 +142,11 @@ form button:hover {
 /* F */
 
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+.img-added {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
 }
 
 .card{
@@ -252,7 +267,7 @@ li strong{
   align-items: center; /* Center vertically */
 }
 
-@media (min-width: 901px) {
+@media (min-width: 1000px) {
   .product-main .card-img-top {
     width: 100%; /* Full width */
     height: 200px; /* Fixed height */
@@ -297,12 +312,36 @@ li strong{
   }
 
 }
-@media (max-width: 900px){
+@media (min-width: 1000px){
   .img-fluid {
     max-width: 60%; /* Adjust the size as needed for mobile */
     max-height: 60%
   }
-  @media (max-width: 900px){
+  .title{
+    font-size: 30px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    top: 30px;
+  }
+  .nav-link{
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  .nav-item{
+    padding: 10px;
+    border-bottom: 1px solid white;
+    margin-right: 30px;
+    font-size: 22.5px;
+    margin-left: 10px;
+  }
+
+  .product-main{
+    position: relative;
+    right: 15px;
+  }
+  
+}
+  @media (max-width: 728px){
   .img-fluid {
     max-width: 60%; /* Adjust the size as needed for mobile */
     max-height: 60%
@@ -357,5 +396,21 @@ margin-top: 5px;
   .product-main .card-products {
     font-size: 0.8rem; /* Smaller text */
   }
+  .back-to-top{
+    position: fixed;
+    bottom: 20px;
+
+    background: #363636;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10%;
+
+    cursor: pointer;
+    font-size: 15px;
+    z-index: 1000;
+    font-family: 'Hanzel', sans-serif;
+    letter-spacing: 2px;
+  }
 }
-}
+
+

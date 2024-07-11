@@ -31,27 +31,51 @@ function NavTabs() {
         expanded={expanded}
         onToggle={() => setExpanded(!expanded)}
         collapseOnSelect
-        expand="lg"
+        expand="xl"
         bg="light"
         variant="dark"
       >
-        <Navbar.Brand className='title' as={Link} to="/">
+        <Navbar.Brand className="title" as={Link} to="/">
           Select Materials
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setExpanded(!expanded)} />
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav nav-toggle"
+          onClick={() => setExpanded(!expanded)}
+        />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <NavDropdown.Item className='nav-item' onClick={() => setExpanded(!expanded)} as={Link} to="/">
+            <NavDropdown.Item
+              className="nav-item"
+              onClick={() => setExpanded(!expanded)}
+              as={Link}
+              to="/"
+            >
               Home
             </NavDropdown.Item>
-            <NavDropdown.Item className='nav-item' onClick={() => setExpanded(!expanded)}as={Link} to="/About">
+            <NavDropdown.Item
+              className="nav-item"
+              onClick={() => setExpanded(!expanded)}
+              as={Link}
+              to="/About"
+            >
               Products
             </NavDropdown.Item>
-            <NavDropdown.Item className='nav-item' onClick={() => setExpanded(!expanded)}as={Link} to="/Contact">
+            <NavDropdown.Item
+              className="nav-item"
+              onClick={() => setExpanded(!expanded)}
+              as={Link}
+              to="/Contact"
+            >
               Contact
             </NavDropdown.Item>
           </Nav>
         </Navbar.Collapse>
+        <Nav.Link
+          className="back-to-top"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        >
+        Top Of Page
+        </Nav.Link>
         <a href="tel:+14099601589" className="nav-item nav-link call-us-link">
           <FontAwesomeIcon icon={faPhone} />
         </a>
@@ -61,5 +85,3 @@ function NavTabs() {
 }
 
 export default NavTabs;
-
-

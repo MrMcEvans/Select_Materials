@@ -1,7 +1,7 @@
 // Bringing in the required import from 'react-router-dom'
 import { Outlet } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Banner from './components/Banner';
+
 import ContactFooter from './components/ContactFooter';
 
 import './App.css';
@@ -14,7 +14,7 @@ function App() {
   return (
     < >
       <Navbar />
-      <Banner/>
+
       <main className="mx-3" >
         <Outlet />
       </main>
