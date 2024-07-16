@@ -192,7 +192,15 @@ form button:hover {
   --bs-bg-opacity: .5;
   
 }
-
+.carousel img {
+  width: 100%; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  object-fit: cover; 
+  margin-top: 70px;
+  margin-bottom: 30px;
+  border-radius: 0 !important;
+  
+}
 .navbar.scrolled {
   background: rgba(0, 0, 0, 0.8);
 }
@@ -343,10 +351,15 @@ li strong{
   }
   
 }
-  @media (max-width: 728px){
+  @media (max-width: 768px){
   .img-fluid {
     max-width: 60%; /* Adjust the size as needed for mobile */
     max-height: 60%
+  }
+  .carousel img {
+    height: 250px; /* Adjust the height for mobile devices */
+    margin-top: 60px; /* Adjust top margin for mobile devices */
+    border-radius: 0 !important; /* Adjust bottom margin for mobile devices */
   }
   .home-card {
     width: 100%; /* Set the width to 100% */

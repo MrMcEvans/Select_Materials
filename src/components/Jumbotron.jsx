@@ -3,19 +3,19 @@ import './style.css';
 
 export default function Jumbotron() {
   return (
-    <div className="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
-      <div className="-logo-card">
-        <img
-          src={vehicle}
-          id="logo"
-          className="card-img-top"
-          alt="Fissure in Sandstone"
-        />
-        <div className="Jumbotron-Text">
-          <h5 className="card-title2">Select Materials </h5>
-          <h6 className='card-title3'>Port Arthur, Texas</h6>
-        </div>
+    <div class="bg-image">
+    <img
+      src={vehicle}
+      class="img-fluid"
+      alt="Sample"
+    />
+    <div class="mask" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <p class="text-white mb-0">Can you see me?</p>
       </div>
     </div>
-  );
-}
+  </div>
+)}
+
+
+

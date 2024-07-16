@@ -1,5 +1,5 @@
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-import Jumbotron from '../components/Jumbotron';
+import Carousel from '../components/Carousel';
 import { Link } from 'react-router-dom';
 
 const containerStyle = {
@@ -35,7 +35,7 @@ function MyMapComponent() {
 export default function Home() {
   return (
     <div className="container">
-      <Jumbotron />
+      <Carousel />
       <div className="home-card">
         <section className="wrap">
           <div className="card">
