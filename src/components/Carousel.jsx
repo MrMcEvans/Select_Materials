@@ -3,13 +3,16 @@ import img1 from '../assets/ConstructionPic1.png';
 import img2 from '../assets/ConstructionPic2.png';
 import './style.css';
 import { Carousel, initMDB } from "mdb-ui-kit";
+import React, { useEffect } from 'react';
 
-initMDB({ Carousel });
+
 
 
 export default function CarouselInit() {
-    return(
-
+  useEffect(() => {
+      initMDB({ Carousel });
+  }, []);
+return (
     
 <div id="carouselMaterialStyle" className="carousel slide carousel-fade" data-mdb-ride="carousel" data-mdb-carousel-init>
   <div className="carousel-indicators">
@@ -25,7 +28,7 @@ export default function CarouselInit() {
         alt="Sunset Over the City" />
       <div className="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <p>Nulla vitae elit libero, a pharetra augue mgollis interdum.</p>
       </div>
     </div>
 

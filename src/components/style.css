@@ -18,22 +18,11 @@
   z-index: 1000;
 
 }
-/* Jumbotron */
-.jumbotron {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
-  background-size: cover;
-  background-position: center;
-  padding-top: 100px;;
-  color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* Carousel */
+.carousel-caption{
+  
 }
-.Jumbotron-Text{
-
-}
-/* J */
+/* C */
 
 .list-group-item {
   background-color: rgb(23, 23, 23);
