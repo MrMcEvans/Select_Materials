@@ -1,34 +1,84 @@
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import Carousel from '../components/Carousel';
 import { Link } from 'react-router-dom';
+import { width } from '@fortawesome/free-solid-svg-icons/fa0';
 
 const containerStyle = {
-  width: '100%',
+  width: '45%',
   height: '400px',
+  margin: '10px',
 };
 
-const center = {
+const gridStyle = {
+  display: 'flex',
+  justifyContent: 'space-around',
+  alignItems: 'center',
+  width: '100%',
+  height: '100%',
+  marginBottom: '100px',
+
+};
+
+const paCenter = {
   lat: 29.884951,
   lng: -93.939949,
 };
-const markerPosition = {
-  lat: 29.929557, // Replace with the latitude of the marker
-  lng: -93.988127, // Replace with the longitude of the marker
+
+const paMarkerPosition = {
+  lat: 29.929557,
+  lng: -93.988127,
+};
+const beCenter = {
+  lat: 30.152375,
+  lng: -94.246815,
+};
+
+const beMarkerPosition = {
+  lat: 30.152375,
+  lng: -94.246815,
 };
 
 function MyMapComponent() {
   const handleMarkerClick = () => {
-    const address = '2570 Halbouty, Port Arthur, TX 77640';
-    const encodedAddress = encodeURIComponent(address);
-    const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
+    const paAddress = '2570 Halbouty, Port Arthur, TX 77640';
+    const beAddress = '11555 Tram Road Beaumont, Tx, 77713';
+    const paencodedAddress = encodeURIComponent(paAddress);
+    const beencodedAddress = encodeURIComponent(beAddress);
+    const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${paencodedAddress}`;
+    const bemapsURL = `https://www.google.com/maps/search/?api=1&query=${beencodedAddress}`;
+    window.open(bemapsURL, '_blank');
     window.open(mapsUrl, '_blank');
   };
+
   return (
-    <LoadScript googleMapsApiKey="AIzaSyCOgrlyOC6bg6nncXVdJihSflA9XvKrtSc">
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
-      <Marker position={markerPosition} onClick={handleMarkerClick} />
-      </GoogleMap>
-    </LoadScript>
+    <div style={gridStyle} className='map'>
+      <div style={containerStyle} className='map-item'>
+        <h2>Beaumont, TX</h2>
+        <LoadScript googleMapsApiKey="AIzaSyCOgrlyOC6bg6nncXVdJihSflA9XvKrtSc">
+          <GoogleMap
+            mapContainerStyle={{ width: '100%', height: '100%' }}
+            center={beCenter}
+            zoom={10}
+          >
+            <Marker position={beMarkerPosition} onClick={handleMarkerClick} />
+          </GoogleMap>
+        </LoadScript>
+      </div>
+
+      <div style={containerStyle} className='map-item'>
+        <h2>Port Arthur, TX</h2>
+        <LoadScript googleMapsApiKey="AIzaSyCOgrlyOC6bg6nncXVdJihSflA9XvKrtSc">
+          <GoogleMap
+            mapContainerStyle={{ width: '100%', height: '100%' }}
+            center={paCenter}
+            zoom={10}
+          >
+            <Marker position={paMarkerPosition} onClick={handleMarkerClick} />
+          </GoogleMap>
+        </LoadScript>
+
+      </div>
+    </div>
   );
 }
 
@@ -44,10 +94,10 @@ export default function Home() {
 
               <h2>Welcome to Select Materials</h2>
               <p>
-                Located in the heart of Port Arthur, TX, Select Materials has
+                Located in the heart of Port Arthur and Beaumont, TX, Select Materials has
                 been a trusted provider of high-quality soil, gravel, and
                 landscaping materials <strong> since 2019 </strong>. We
-                are dedicated to serving both residential and commercial
+                are dedicated to serving both industrial and commercial
                 customers with top-notch products and exceptional customer
                 service.
               </p>
@@ -64,8 +114,10 @@ export default function Home() {
                     materials to ensure your projects are built to last.
                   </li >
                   <li >
-                    <strong>Expertise:</strong> Our knowledgeable team is here to
-                    offer advice and assistance tailored to your specific needs.
+                    <strong>Industrial Expertise:</strong> At Select Materials, we understand the unique requirements of industrial projects and are equipped to deliver the high-quality materials and expert guidance necessary to ensure their success. Our commitment to excellence and customer satisfaction makes us the preferred choice for both industrial and commercial needs in the region.
+                  </li>
+                  <li >
+                    <strong>Commercial Expertise:</strong>We offer specialized advice and support tailored to the needs of commercial projects, helping you achieve outstanding results.
                   </li>
                   <li >
                     <strong>Customer Satisfaction:</strong> We are committed to
@@ -77,6 +129,7 @@ export default function Home() {
                     supporting local projects.
                   </li>
                 </ul>
+              
               </div>
               <br />
               <br className='' />
@@ -133,7 +186,7 @@ export default function Home() {
 
               <p className='products-p'>
                 Whether you are working on a small garden or a large
-                construction project, Select Materials has the supplies you need
+                industrial project, Select Materials has the supplies you need
                 to get the job done right.
               </p>
 
@@ -169,7 +222,7 @@ export default function Home() {
         <br />
         <br />
         <section>
-          <MyMapComponent className="map" />
+          <MyMapComponent id="map" className="map" />
         </section>
       </div>
     </div>

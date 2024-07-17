@@ -3,7 +3,15 @@
   font-family: 'Hanzel';
   src: url('../assets/HanzelThinBold.ttf');
 }
-
+.map {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%; 
+  margin-bottom: 100px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
 .back-to-top{
   position: fixed;
   bottom: 20px;
@@ -19,9 +27,7 @@
 
 }
 /* Carousel */
-.carousel-caption{
-  
-}
+
 /* C */
 
 .list-group-item {
@@ -81,7 +87,12 @@ form input:focus {
   border-color: #4a90e2;
   outline: none;
 }
-
+.text-muted {
+  color: #cccccc !important; /* Makes the text lighter */
+}
+.carousel-button{
+  border: #999 1px solid;
+}
 form input:hover {
   border-color: #999;
 }
@@ -182,13 +193,22 @@ form button:hover {
   
 }
 .carousel img {
-  width: 100%; /* Adjust the width as needed */
-  height: 400px; /* Adjust the height as needed */
+  max-width: 80%; /* Adjust the width as needed */
+  height: 500px; /* Adjust the height as needed */
   object-fit: cover; 
   margin-top: 70px;
   margin-bottom: 30px;
   border-radius: 0 !important;
-  
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel {
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  color: white;
+  border-radius: 0;
+  --bs-card-border-width: none;
+  margin-top: 70px;
 }
 .navbar.scrolled {
   background: rgba(0, 0, 0, 0.8);
@@ -345,10 +365,26 @@ li strong{
     max-width: 60%; /* Adjust the size as needed for mobile */
     max-height: 60%
   }
-  .carousel img {
-    height: 250px; /* Adjust the height for mobile devices */
-    margin-top: 60px; /* Adjust top margin for mobile devices */
-    border-radius: 0 !important; /* Adjust bottom margin for mobile devices */
+  .map {
+    flex-direction: column;
+    margin-top: 10px;
+    
+  }
+  .map-item{
+    padding: 10px;
+    min-width: 100%;
+  }
+  .carousel {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+
+  }
+  .carousel img{
+      max-width: 100%;
+      height: 200px;
+      object-fit: cover;
   }
   .home-card {
     width: 100%; /* Set the width to 100% */

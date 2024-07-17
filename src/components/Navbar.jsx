@@ -68,6 +68,14 @@ function NavTabs() {
             >
               Contact
             </NavDropdown.Item>
+            <NavDropdown.Item
+              className="nav-item"
+              onClick={() => setExpanded(!expanded)}
+              as={Link}
+              to="/Portfolio"
+            >
+              Services
+            </NavDropdown.Item>
           </Nav>
         </Navbar.Collapse>
         <Nav.Link
