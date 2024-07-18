@@ -14,24 +14,32 @@ export default function About() {
   <p>
     At Select Materials, we specialize in providing comprehensive site-work services tailored to meet the needs of industrial and commercial businesses. Our expertise ensures that your projects are completed efficiently and to the highest standards. Our site-work services include:
   </p>
-  <ul>
-    <li><strong>Drain Structures:</strong> Expert installation and maintenance of drain structures to manage water flow effectively.</li>
-    <li><strong>Drainage:</strong> Comprehensive drainage solutions to prevent water accumulation and protect your site.</li>
-    <li><strong>Drain Piping:</strong> High-quality drain piping systems designed to handle heavy-duty industrial and commercial requirements.</li>
-    <li><strong>Roads:</strong> Construction and maintenance of durable roads that withstand high traffic and heavy loads.</li>
-    <li><strong>Building Pads:</strong> Preparation of stable building pads to support construction projects of any scale.</li>
-    <li><strong>Levees:</strong> Design and construction of levees to provide flood protection and water management.</li>
-    <li><strong>Retention and Detention Ponds:</strong> Development of retention and detention ponds to manage stormwater and enhance site sustainability.</li>
-    <li><strong>Fencing:</strong> Installation of secure and reliable fencing to protect your site and assets.</li>
-    <li><strong>Mowing:</strong> Regular mowing services to maintain a clean and professional appearance for your site.</li>
-    <li><strong>Grading:</strong> Expert grading services to ensure a level and stable foundation for construction.</li>
-    <li><strong>Surveying:</strong> Accurate surveying to provide precise measurements and site mapping.</li>
-    <li><strong>Excavation:</strong> Efficient excavation services for foundations, trenches, and other site needs.</li>
-    <li><strong>Concrete Paving:</strong> High-quality concrete paving for durable and long-lasting surfaces.</li>
+  <ul className='list-group'>
+    <li className='list-group-item portfolio-list'><strong>Drain Structures</strong></li>
+    <li className='list-group-item portfolio-list'><strong>Drainage</strong></li>
+    <li className='list-group-item portfolio-list'><strong>Drain Piping</strong></li>
+    <li className='list-group-item portfolio-list'><strong>Roads</strong></li>
+    <li className='list-group-item portfolio-list'><strong>Building Pads</strong></li>
+    <li className='list-group-item portfolio-list'><strong>Levees</strong></li>
+    <li className='list-group-item portfolio-list'><strong>Retention and Detention Ponds</strong></li>
+    <li className='list-group-item portfolio-list'><strong>Fencing</strong></li>
+    <li className='list-group-item portfolio-list'><strong>Mowing</strong></li>
+    <li className='list-group-item portfolio-list'><strong>Grading</strong></li>
+    <li className='list-group-item portfolio-list'><strong>Surveying</strong></li>
+    <li className='list-group-item portfolio-list'><strong>Excavation</strong></li>
+    <li className='list-group-item portfolio-list'><strong>Concrete Paving</strong></li>
   </ul>
+  
   <p>
     Trust Select Materials to deliver exceptional site-work services that support the success and longevity of your industrial and commercial projects. Our commitment to quality and customer satisfaction sets us apart as a reliable partner in the region.
   </p>
+  <Link
+                  to="/Contact"
+                  className="btn btn-secondary btn-lg"
+                  role='button'
+                >
+                  Contact For Info
+                </Link>
   </div>
         <div className="card mb-3">
           <div className="row g-0 product-control">

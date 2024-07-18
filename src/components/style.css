@@ -33,6 +33,10 @@
 .list-group-item {
   background-color: rgb(23, 23, 23);
   color: white;
+  
+}
+.portfolio-list {
+  
 }
 .products-p{
   margin-top: 20px;
@@ -243,6 +247,9 @@ form button:hover {
 .nav-item{
  padding: 5px;
   border-bottom: 1px solid white;
+}
+.nav-item:hover{
+  border-bottom: 2px solid white;
 }
 #Welcome{
   border: rgb(97, 97, 97) 2px solid;

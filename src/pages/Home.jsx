@@ -51,7 +51,7 @@ function MyMapComponent() {
   };
 
   return (
-    <div style={gridStyle} className='map'>
+    <div style={gridStyle} id='bemap'className='map'>
       <div style={containerStyle} className='map-item'>
         <h2>Beaumont, TX</h2>
         <LoadScript googleMapsApiKey="AIzaSyCOgrlyOC6bg6nncXVdJihSflA9XvKrtSc">
@@ -65,7 +65,7 @@ function MyMapComponent() {
         </LoadScript>
       </div>
 
-      <div style={containerStyle} className='map-item'>
+      <div style={containerStyle} id='pamap'className='map-item'>
         <h2>Port Arthur, TX</h2>
         <LoadScript googleMapsApiKey="AIzaSyCOgrlyOC6bg6nncXVdJihSflA9XvKrtSc">
           <GoogleMap

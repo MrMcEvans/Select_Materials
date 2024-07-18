@@ -22,33 +22,45 @@ export default function CarouselInit() {
                 <div className="carousel-item active">
                     <img src={img1} className="d-block w-100"
                         alt="Sunset Over the City" />
-
-                        <h3>
-                            Port Arthur, TX <br />
-                            <small class="text-muted">Location</small>
-                        </h3>
+                    <h2>Select Materials</h2>
+                    <h3>
+                        Port Arthur, TX <br />
+                        <HashLink
+                            to="#pamap"
+                            className="btn btn-dark"
+                            role="button"
+                        >
+                            Directions
+                        </HashLink>
+                    </h3>
                 </div>
 
                 <div className="carousel-item">
                     <img src={img2} className="d-block w-100"
                         alt="Canyon at Nigh" />
-
-                        <h3>
-                            Beaumont, TX <br />
-                            <small class="text-muted">Location</small>
-                        </h3>
+                    <h2>Select Materials</h2>
+                    <h3>
+                        Beaumont, TX <br />
+                        <HashLink
+                            to="#bemap"
+                            className="btn btn-dark"
+                            role="button"
+                        >
+                            Directions
+                        </HashLink>
+                    </h3>
 
                 </div>
 
                 <div className="carousel-item">
                     <img src={vehicle} className="d-block w-100"
                         alt="Cliff Above a Stormy Sea" />
-                    
-                        <h3>
-                            COMING SOON <br />
-                            <small class="text-muted">Orange Location</small>
-                        </h3>
-                    
+
+                    <h3>
+                        COMING SOON <br />
+                        <small class="text-muted">Orange Location</small>
+                    </h3>
+
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-mdb-target="#carouselMaterialStyle" data-mdb-slide="prev">

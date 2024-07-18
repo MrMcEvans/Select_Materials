@@ -49,28 +49,28 @@ function ContactFooter() {
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Products</h6>
-              <ul className='list-group list-group-light'>
-    <li className='list-group-item'>
+              <ul>
+    <li className=''>
       <Link to="/About" className="text-reset">
         Pure Clay
       </Link>
     </li>
-    <li className='list-group-item'>
+    <li className=''>
       <Link to="/About" className="text-reset">
         Top Soil
       </Link>
     </li>
-    <li className='list-group-item'>
+    <li className=''>
       <Link to="/About" className="text-reset">
         Clay 60/40
       </Link>
     </li>
-    <li className='list-group-item'>
+    <li className=''>
       <Link to="/About" className="text-reset">
         Sand
       </Link>
     </li>
-    <li className='list-group-item'>
+    <li className=''>
       <Link to="/About" className="text-reset">
         Lime Stabilized Soil
       </Link>

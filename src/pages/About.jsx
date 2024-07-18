@@ -134,10 +134,10 @@ export default function About() {
                     alt="Sunset Over the Sea"
                   />
                   <div className="card-body">
-                    <h5>Delivery</h5>
+                    <h5>Gravel</h5>
 
                     <HashLink
-                      to="/About/#delivery-description"
+                      to="/About/#gravel-description"
                       className="btn btn-dark"
                       role="button"
                     >
@@ -397,12 +397,12 @@ export default function About() {
           </div>
         </div>
       </div>
-      <br id="delivery-description" />
+      <br id="gravel-description" />
       <div>
         <div className="card mb-3">
           <div className="row g-0 product-control">
             <div className="col-md-4 product-cards">
-              <h1>Delivery</h1>
+              <h1>Gravel</h1>
               <img
                 src="https://img.freepik.com/premium-photo/dusk-blue-dump-truck-moves-across-building-site-covered-dust-dirt_1043470-4015.jpg"
                 alt="Trendy Pants and Shoes"
