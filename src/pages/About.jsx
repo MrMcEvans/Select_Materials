@@ -129,7 +129,7 @@ export default function About() {
               <div id="delivery">
                 <div className="card-products" style={{ width: '18rem' }}>
                   <img
-                    src="https://img.freepik.com/premium-photo/dusk-blue-dump-truck-moves-across-building-site-covered-dust-dirt_1043470-4015.jpg"
+                    src="https://reagg.com/wp-content/uploads/2018/04/highway-construction.jpg"
                     className="card-img-top"
                     alt="Sunset Over the Sea"
                   />
@@ -382,7 +382,7 @@ export default function About() {
                     <strong>Superior Strength and Durability:</strong> Our lime stabilized soil provides enhanced structural integrity and long-lasting performance, ensuring stable and resilient construction projects.
                   </li>
                   <li className="list-group-item">
-                    <strong>Optimized Soil Properties:</strong> Our product reduces soil plasticity and increases load-bearing capacity, making it ideal for supporting heavy structures and roadways.
+                    <strong>Sustainable Practices:</strong> Our product reduces soil plasticity and increases load-bearing capacity, making it ideal for supporting heavy structures and roadways.
                   </li>
                 </ul>
                 <Link
@@ -404,7 +404,7 @@ export default function About() {
             <div className="col-md-4 product-cards">
               <h1>Gravel</h1>
               <img
-                src="https://img.freepik.com/premium-photo/dusk-blue-dump-truck-moves-across-building-site-covered-dust-dirt_1043470-4015.jpg"
+                src="https://reagg.com/wp-content/uploads/2018/04/highway-construction.jpg"
                 alt="Trendy Pants and Shoes"
                 className="img-added rounded-start"
               />
@@ -414,10 +414,19 @@ export default function About() {
               <div className="card-body">
 
                 <p>
-                  We are pleased to say thay your premium dirt is up for delivery from Select Materials.
-                  Whether it's topsoil, sand, or lime stabilized soil, our high-quality materials can be delivered straight to your site, ensuring your commercial projects are built on
-                  the best foundation available.
+                  Gravel is widely used in construction, landscaping, and industrial applications due to its excellent strength, stability, and drainage properties.
                 </p>
+                <ul className="list-group list-group-light">
+                  <li className="list-group-item">
+                    <strong>High-Quality Materials:</strong> Our gravel is sourced and processed to ensure the highest quality, providing superior strength and durability for your projects.
+                  </li>
+                  <li className="list-group-item">
+                    <strong>Consistent Supply:</strong> We guarantee a reliable and steady supply of gravel, ensuring your projects remain on schedule.
+                  </li>
+                  <li className="list-group-item">
+                    <strong>Competitive Pricing:</strong> We offer competitive pricing without compromising on quality, making your projects cost-effective.
+                  </li>
+                </ul>
                 <p><strong>Let's build greatness together.</strong></p>
                 
                 <Link
