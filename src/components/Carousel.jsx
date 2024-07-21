@@ -33,6 +33,7 @@ export default function CarouselInit() {
                             Directions
                         </HashLink>
                     </h3>
+                    
                 </div>
 
                 <div className="carousel-item">

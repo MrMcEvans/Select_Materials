@@ -179,7 +179,7 @@ export default function Home() {
                   className="btn btn-dark"
                   role="button"
                 >
-                  <strong>Delivery</strong>
+                  <strong>Gravel</strong>
                 </Link></ul>
 
               </ul>

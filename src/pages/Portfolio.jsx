@@ -46,7 +46,7 @@ export default function About() {
             <div className="col-md-4 product-cards">
               <h1>Delivery</h1>
               <img
-                src="https://img.freepik.com/premium-photo/dusk-blue-dump-truck-moves-across-building-site-covered-dust-dirt_1043470-4015.jpg"
+                src="https://lalandscapesupply.com/wp-content/uploads/2022/02/dump-truck-load-of-dirt-delivery-near-me-2-768x512.jpg"
                 alt="Trendy Pants and Shoes"
                 className="img-added rounded-start"
               />

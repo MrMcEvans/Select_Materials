@@ -41,14 +41,32 @@ function ContactFooter() {
         <div className="container text-center text-md-start mt-5">
           <div className="row mt-3">
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">
+              <h4 className="text-uppercase fw-bold mb-4">
                 <i className="fas fa-gem me-3"></i>Select Materials
-              </h6>
-              <h6>Port Arthur, TX</h6>
+                
+              </h4>
+              <h5>Port Arthur, TX</h5>
+              <p><a
+                  href="https://www.google.com/maps/place/2570+Halbouty+Rd+Port+Arthur,+TX,+77640"
+                  target="_blank"
+                  className="text-reset"
+                  rel="noreferrer"
+                >
+                  2570 Halbouty Rd Port Arthur, TX, 77640
+                </a></p>
+                <h5>Beaumont, TX</h5>
+                <p><a
+                  href="https://www.google.com/maps/place/2570+Halbouty+Rd+Port+Arthur,+TX,+77640"
+                  target="_blank"
+                  className="text-reset"
+                  rel="noreferrer"
+                >
+                  11555 Tram Road Beaumont, Tx, 77713
+                </a></p>
             </div>
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Products</h6>
+              <h4 className="text-uppercase fw-bold mb-4">Products</h4>
               <ul>
     <li className=''>
       <Link to="/About" className="text-reset">
@@ -75,20 +93,25 @@ function ContactFooter() {
         Lime Stabilized Soil
       </Link>
     </li>
+    <li className=''>
+      <Link to="/About" className="text-reset">
+        Gravel
+      </Link>
+    </li>
   </ul>
             </div>
 
             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
+              <h4 className="text-uppercase fw-bold mb-4">Contact</h4>
               <p>
                 <i className="fas fa-home"></i>
                 <a
-                  href="https://www.google.com/maps/place/2570+Halbouty+Rd+Port+Arthur,+TX,+77640"
+                  href="mailto:SelectMaterials409@gmail.com"
                   target="_blank"
                   className="text-reset"
                   rel="noreferrer"
                 >
-                  2570 Halbouty Rd Port Arthur, TX, 77640
+                  SelectMaterial409@gmail.com
                 </a>
               </p>
               <p>
