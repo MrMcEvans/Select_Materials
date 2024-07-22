@@ -51,7 +51,7 @@ function MyMapComponent() {
   };
 
   return (
-    <div style={gridStyle} id='bemap'className='map'>
+    <div style={gridStyle} id='bemap' className='map'>
       <div style={containerStyle} className='map-item'>
         <h2>Beaumont, TX</h2>
         <LoadScript googleMapsApiKey="AIzaSyCOgrlyOC6bg6nncXVdJihSflA9XvKrtSc">
@@ -65,7 +65,7 @@ function MyMapComponent() {
         </LoadScript>
       </div>
 
-      <div style={containerStyle} id='pamap'className='map-item'>
+      <div style={containerStyle} id='pamap' className='map-item'>
         <h2>Port Arthur, TX</h2>
         <LoadScript googleMapsApiKey="AIzaSyCOgrlyOC6bg6nncXVdJihSflA9XvKrtSc">
           <GoogleMap
@@ -129,7 +129,7 @@ export default function Home() {
                     supporting local projects.
                   </li>
                 </ul>
-              
+
               </div>
               <br />
               <br className='' />
@@ -185,9 +185,8 @@ export default function Home() {
               </ul>
 
               <p className='products-p'>
-                Whether you are working on a small garden or a large
-                industrial project, Select Materials has the supplies you need
-                to get the job done right.
+                Whether you're managing a large industrial or commercial project, or working on a smaller residential job,
+                Select Materials has the supplies you need to get the job done right.
               </p>
 
 

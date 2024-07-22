@@ -2,23 +2,20 @@ import './style.css';
 import { Link } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons'
 
-const Component = <SocialIcon url="https://twitter.com" />
+const Component = <SocialIcon url="https://twitter.com" /> 
+   const beAddress = '11555 Tram Road Beaumont, Tx, 77713';
+
 
 function ContactFooter() {
   return (
     <footer className="text-center text-lg-start bg-body-tertiary text-muted contact-footer">
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <div className="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
+          <h4>Get connected with <br /> us on social networks:</h4>
         </div>
 
         <div>
-          <a
-            href="https://www.facebook.com/SelectMaterialsPortArthur/"
-            className="me-4 text-reset"
-          >
-            Facebook
-          </a>
+        <SocialIcon url="https://www.facebook.com/SelectMaterialsPortArthur/" className="me-4 text-reset" />
           <a href="#" className="me-4 text-reset">
             <i className="fab fa-twitter"></i>
           </a>
@@ -56,7 +53,7 @@ function ContactFooter() {
                 </a></p>
                 <h5>Beaumont, TX</h5>
                 <p><a
-                  href="https://www.google.com/maps/place/2570+Halbouty+Rd+Port+Arthur,+TX,+77640"
+                  href="https://www.google.com/maps/place/11555+Tram+Rd+Beaumont,+TX,+77713"
                   target="_blank"
                   className="text-reset"
                   rel="noreferrer"
@@ -67,8 +64,8 @@ function ContactFooter() {
 
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h4 className="text-uppercase fw-bold mb-4">Products</h4>
-              <ul>
-    <li className=''>
+              <ul className='contact-list'>
+    <li className='contact-list-item'>
       <Link to="/About" className="text-reset">
         Pure Clay
       </Link>

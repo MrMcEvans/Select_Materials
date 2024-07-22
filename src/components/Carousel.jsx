@@ -19,7 +19,7 @@ export default function CarouselInit() {
 
 
             <div className="carousel-inner rounded-5 shadow-4-strong">
-                <div className="carousel-item active">
+                <div className="carousel-item active" data-mdb-interval="3000">
                     <img src={img1} className="d-block w-100"
                         alt="Sunset Over the City" />
                     <h2>Select Materials</h2>
@@ -37,7 +37,7 @@ export default function CarouselInit() {
                     
                 </div>
 
-                <div className="carousel-item">
+                <div className="carousel-item" data-mdb-interval="3000">
                     <img src={img2} className="d-block w-100"
                         alt="Canyon at Nigh" />
                     <h2>Select Materials</h2>
@@ -58,10 +58,17 @@ export default function CarouselInit() {
                     <img src={vehicle} className="d-block w-100"
                         alt="Cliff Above a Stormy Sea" />
 
-                    <h3>
-                        COMING SOON <br />
-                        <small className="text-muted">Orange Location</small>
-                    </h3>
+                    <h2>
+                        COMING SOON
+                    </h2>
+                    <h3><small className="text-muted">Orange Location</small><br />
+                        <HashLink
+                            to="#bemap"
+                            className="btn btn-dark"
+                            role="button"
+                        >
+                            Directions
+                        </HashLink></h3>
 
                 </div>
             </div>
