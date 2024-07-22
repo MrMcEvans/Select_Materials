@@ -412,6 +412,9 @@ export default function About() {
             </div>
             <div className="col-md-8">
               <div className="card-body">
+              <h4>
+                  <strong>Why Choose Our Gravel:</strong>
+                </h4>
 
                 <p>
                   Gravel is widely used in construction, landscaping, and industrial applications due to its excellent strength, stability, and drainage properties.
@@ -427,7 +430,6 @@ export default function About() {
                     <strong>Competitive Pricing:</strong> We offer competitive pricing without compromising on quality, making your projects cost-effective.
                   </li>
                 </ul>
-                <p><strong>Let's build greatness together.</strong></p>
                 
                 <Link
                   to="/Contact"

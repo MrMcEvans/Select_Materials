@@ -70,27 +70,27 @@ function ContactFooter() {
         Pure Clay
       </Link>
     </li>
-    <li className=''>
+    <li className='contact-list-item'>
       <Link to="/About" className="text-reset">
         Top Soil
       </Link>
     </li>
-    <li className=''>
+    <li className='contact-list-item'>
       <Link to="/About" className="text-reset">
         Clay 60/40
       </Link>
     </li>
-    <li className=''>
+    <li className='contact-list-item'>
       <Link to="/About" className="text-reset">
         Sand
       </Link>
     </li>
-    <li className=''>
+    <li className='contact-list-item'>
       <Link to="/About" className="text-reset">
         Lime Stabilized Soil
       </Link>
     </li>
-    <li className=''>
+    <li className='contact-list-item'>
       <Link to="/About" className="text-reset">
         Gravel
       </Link>
@@ -126,7 +126,7 @@ function ContactFooter() {
         className="text-center p-4"
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}
       >
-        ©Select Materials Port Arthur 2024
+        ©2024 Select Materials
       </div>
     </footer>
   );

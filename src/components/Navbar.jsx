@@ -80,11 +80,12 @@ function NavTabs() {
           </Nav>
         </Navbar.Collapse>
         <Nav.Link
-          className="back-to-top"
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        >
-        Top Of Page
-        </Nav.Link>
+  className="back-to-top"
+  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+>
+  <span className="back-to-top-text">Back to Top</span>
+  <span className="back-to-top-arrow"><strong>↑</strong></span>
+</Nav.Link>
         <a href="tel:+14099601589" className="nav-item nav-link call-us-link">
           <FontAwesomeIcon icon={faPhone} />
         </a>

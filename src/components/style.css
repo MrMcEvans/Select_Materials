@@ -3,16 +3,18 @@
   font-family: 'Hanzel';
   src: url('../assets/HanzelThinBold.ttf');
 }
+
 .map {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   margin-bottom: 100px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
 }
-.back-to-top{
+
+.back-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -26,6 +28,7 @@
   z-index: 1000;
 
 }
+
 /* Carousel */
 
 /* C */
@@ -33,8 +36,9 @@
 .list-group-item {
   background-color: rgb(23, 23, 23);
   color: white;
-  
+
 }
+
 .portfolio-list {
   background: #3d3d3d;
   margin: 5px 0;
@@ -46,20 +50,23 @@
   margin-left: auto;
   margin-right: auto;
 }
-.products-p{
+
+.products-p {
   margin-top: 20px;
 }
 
 /* Form */
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.card-img, .card-img-top  {
+.card-img,
+.card-img-top {
   border-radius: 0;
 }
+
 .form input {
   display: block;
   margin-top: 5px;
@@ -70,16 +77,20 @@
   border: 3px solid black;
   border-radius: 7px;
 }
+
 .form-card {
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
+  justify-content: center;
+  /* Centers horizontally */
+  align-items: center;
+  /* Centers vertically */
 
 }
 
 .form-outline {
   display: block;
-  width: auto; /* Adjust this as needed */
+  width: auto;
+  /* Adjust this as needed */
   margin: auto;
   height: auto;
   color: white;
@@ -95,19 +106,25 @@ form input[type="email"] {
   background-color: #494949;
   color: white;
 }
+
 form input:focus {
   border-color: #4a90e2;
   outline: none;
 }
+
 .text-muted {
-  color: #cccccc !important; /* Makes the text lighter */
+  color: #cccccc !important;
+  /* Makes the text lighter */
 }
-.carousel-button{
+
+.carousel-button {
   border: #999 1px solid;
 }
+
 form input:hover {
   border-color: #999;
 }
+
 form button {
   padding: 10px 20px;
   background-color: #4a90e2;
@@ -140,6 +157,7 @@ form button:hover {
 #form4Example3:hover {
   border-color: #ffffff;
 }
+
 form button {
   padding: 10px 20px;
   background-color: #4a90e2;
@@ -153,6 +171,7 @@ form button {
 form button:hover {
   background-color: #357abD;
 }
+
 /* F */
 
 
@@ -160,10 +179,10 @@ form button:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
+
 }
 
-.card{
+.card {
   width: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   color: white;
@@ -171,7 +190,8 @@ form button:hover {
   --bs-card-border-width: none;
   margin-top: 70px;
 }
-.card-products{
+
+.card-products {
   width: auto;
   background: linear-gradient(to bottom, rgb(210, 210, 210) 0%, rgba(0, 0, 0, 0) 100%);
   color: white;
@@ -179,20 +199,32 @@ form button:hover {
   --bs-card-border-width: none;
   margin: 10px;
 }
-.card-title{
+
+.card-title {
   font-size: 40px;
   font-family: 'Hanzel', sans-serif;
   letter-spacing: 4px;
-  border-top: 1px solid white; /* Adjust as needed */
+  border-top: 1px solid white;
+  /* Adjust as needed */
   border-bottom: 1px solid white;
   letter-spacing: 4px;
   margin-bottom: 30px;
   padding: 10px;
 }
-.contact-list{
 
-  font-size: 20px;
-  list-style: none;
+.contact-list {
+  list-style: none; /* Removes default list styling */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  display: flex; /* Use flexbox to center the list */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+  
+}
+
+.contact-list-item {
+  margin: 5px 0; /* Adjust spacing between items as needed */
+  font-style: 20px;
 }
 
 .navbar {
@@ -206,18 +238,22 @@ form button:hover {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 150%);
   padding-bottom: 18px;
   --bs-bg-opacity: .5;
-  
+
 }
+
 .carousel img {
-  max-width: 80%; /* Adjust the width as needed */
-  height: 500px; /* Adjust the height as needed */
-  object-fit: cover; 
+  max-width: 80%;
+  /* Adjust the width as needed */
+  height: 500px;
+  /* Adjust the height as needed */
+  object-fit: cover;
   margin-top: 70px;
   margin-bottom: 30px;
   border-radius: 0 !important;
   margin-left: auto;
   margin-right: auto;
 }
+
 .carousel {
   width: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
@@ -226,12 +262,18 @@ form button:hover {
   --bs-card-border-width: none;
   margin-top: 70px;
 }
+
 .navbar.scrolled {
   background: rgba(0, 0, 0, 0.8);
 }
 
+.back-to-top-arrow {
+  display: none;
+}
+
 .navbar-nav .nav-link.active {
-  background-color: gray; /* Adjust the color as needed */
+  background-color: gray;
+  /* Adjust the color as needed */
 }
 
 .title {
@@ -240,30 +282,38 @@ form button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 30px;
-  border-top: 1px solid white; /* Adjust as needed */
+  border-top: 1px solid white;
+  /* Adjust as needed */
   border-bottom: 1px solid white;
   font-family: 'Hanzel', sans-serif;
-  letter-spacing: 4px; /* Adjust as needed */
+  letter-spacing: 4px;
+  /* Adjust as needed */
 }
-.mr-auto{
+
+.mr-auto {
   font-family: 'Hanzel', sans-serif;
-  letter-spacing: 4px; /* Adjust as needed */
+  letter-spacing: 4px;
+  /* Adjust as needed */
   padding-top: 15px;
   font-size: 20px;
 
 }
+
 .navbar-toggler {
   margin-left: 12px;
   margin-top: 5px;
 }
-.nav-item{
- padding: 5px;
+
+.nav-item {
+  padding: 5px;
   border-bottom: 1px solid white;
 }
-.nav-item:hover{
+
+.nav-item:hover {
   border-bottom: 2px solid white;
 }
-#Welcome{
+
+#Welcome {
   border: rgb(97, 97, 97) 2px solid;
   border-radius: 10px;
 }
@@ -273,99 +323,127 @@ footer.bg-body-tertiary {
   color: white !important;
   --bs-bg-opacity: .3;
   margin-top: 40px;
-  
-  
+
+
 }
-p{
+
+p {
   font-size: 20px;
 }
-.list-group{
+
+.list-group {
   list-style-type: none;
-  
+
 }
-li strong{
+
+li strong {
   font-size: 18px;
   text-decoration: underline;
 }
-.card-title2{
+
+.card-title2 {
   margin-top: 30px;
   font-family: 'Hanzel', sans-serif;
   font-size: 40px;
   letter-spacing: 5px;
 }
-.card-title3{
+
+.card-title3 {
   font-family: 'Hanzel', sans-serif;
   font-size: 30px;
   letter-spacing: 5px;
 }
 
 .container-products {
-  display: flex; /* Use flexbox to center the content */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  display: flex;
+  /* Use flexbox to center the content */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
 }
 
 @media (min-width: 1000px) {
   .product-main .card-img-top {
-    width: 100%; /* Full width */
-    height: 200px; /* Fixed height */
-    object-fit: cover; /* Cover the area nicely */
+    width: 100%;
+    /* Full width */
+    height: 200px;
+    /* Fixed height */
+    object-fit: cover;
+    /* Cover the area nicely */
   }
+
   .call-us-link {
     position: fixed;
-    right: 20px; /* Adjust as needed */
-    top: 20px; 
-    z-index: 1000; /* Ensure it's above other content */
+    right: 20px;
+    /* Adjust as needed */
+    top: 20px;
+    z-index: 1000;
+    /* Ensure it's above other content */
     font-size: 20px;
     border: 0;
   }
+
   .img-fluid {
-    max-width: 50%; /* Adjust the size as needed for desktop */
+    max-width: 50%;
+    /* Adjust the size as needed for desktop */
     max-height: 50%
   }
-  .nav-item{
+
+  .nav-item {
     padding: 10px;
     border-bottom: 1px solid white;
     margin-right: 30px;
     font-size: 22.5px;
     margin-left: 10px;
   }
-  .title{
+
+  .title {
     font-size: 40px;
     margin-top: 10px;
     letter-spacing: 10px;
     font-weight: bold;
   }
+
   #logo-card {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100%; /* Ensure the container fills its parent's height */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    height: 100%;
+    /* Ensure the container fills its parent's height */
   }
-  #logo{
+
+  #logo {
     width: 70%;
     max-height: 70%;
     align-items: center;
-  
+
   }
 
 }
-@media (min-width: 1000px){
+
+@media (min-width: 1000px) {
   .img-fluid {
-    max-width: 60%; /* Adjust the size as needed for mobile */
+    max-width: 60%;
+    /* Adjust the size as needed for mobile */
     max-height: 60%
   }
-  .title{
+
+  .title {
     font-size: 30px;
     letter-spacing: 10px;
     font-weight: bold;
     top: 30px;
   }
-  .nav-link{
+
+  .nav-link {
     font-size: 20px;
     margin-right: 20px;
   }
-  .nav-item{
+
+  .nav-item {
     padding: 10px;
     border-bottom: 1px solid white;
     margin-right: 30px;
@@ -373,26 +451,31 @@ li strong{
     margin-left: 10px;
   }
 
-  .product-main{
+  .product-main {
     position: relative;
     right: 15px;
   }
-  
+
 }
-  @media (max-width: 768px){
+
+@media (max-width: 768px) {
   .img-fluid {
-    max-width: 60%; /* Adjust the size as needed for mobile */
+    max-width: 60%;
+    /* Adjust the size as needed for mobile */
     max-height: 60%
   }
+
   .map {
     flex-direction: column;
     margin-top: 10px;
-    
+
   }
-  .map-item{
+
+  .map-item {
     padding: 10px;
     min-width: 100%;
   }
+
   .carousel {
     width: 100%;
     margin-left: auto;
@@ -400,66 +483,91 @@ li strong{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
 
   }
-  .carousel img{
-      max-width: 100%;
-      height: 200px;
-      object-fit: cover;
+
+  .carousel img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
   }
+
   .home-card {
-    width: 100%; /* Set the width to 100% */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    margin-left: 0; /* Remove left margin */
-    margin-right: 0; /* Remove right margin */
-    padding-left: 0; /* Remove left padding */
-    padding-right: 0; /* Remove right padding */
+    width: 100%;
+    /* Set the width to 100% */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    margin-left: 0;
+    /* Remove left margin */
+    margin-right: 0;
+    /* Remove right margin */
+    padding-left: 0;
+    /* Remove left padding */
+    padding-right: 0;
+    /* Remove right padding */
   }
 
 
   .call-us-link {
     position: fixed;
-    right: 20px; /* Adjust as needed */
-    top: 20px; /* Adjust as needed */
-    z-index: 1000; /* Ensure it's above other content */
+    right: 20px;
+    /* Adjust as needed */
+    top: 20px;
+    /* Adjust as needed */
+    z-index: 1000;
+    /* Ensure it's above other content */
     font-size: 20px;
     border: 0;
   }
-  .form-outline{
+
+  .form-outline {
     width: 100%;
   }
-  .title{
-margin-top: 5px;
+
+  .title {
+    margin-top: 5px;
   }
-  .card{
+
+  .card {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 300%);
   }
+
   .product-cards img {
     display: none;
   }
+
   .product-main {
-    width: 60%; /* Adjust the width as needed */
-    padding: 1rem; /* Smaller padding */
-    margin-bottom: 1rem; /* More space between cards */
+    width: 60%;
+    /* Adjust the width as needed */
+    padding: 1rem;
+    /* Smaller padding */
+    margin-bottom: 1rem;
+    /* More space between cards */
     max-height: 60%;
-    height: 300px; /* Fixed height for all cards */
+    height: 300px;
+    /* Fixed height for all cards */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  
+
   .product-main img {
-    width: 100%; /* Ensure image covers the full width of the card */
-    height: 200px; /* Fixed height for images */
-    object-fit: cover; /* Cover the area without stretching */
+    width: 100%;
+    /* Ensure image covers the full width of the card */
+    height: 200px;
+    /* Fixed height for images */
+    object-fit: cover;
+    /* Cover the area without stretching */
   }
-  
+
   .product-main .card-products {
-    font-size: 0.8rem; /* Smaller text */
+    font-size: 0.8rem;
+    /* Smaller text */
   }
-  .back-to-top{
+
+  .back-to-top {
     position: fixed;
     bottom: 20px;
 
-    background: #363636;
+    background: #3c3b3b;
     color: white;
     border: 1px solid white;
     border-radius: 10%;
@@ -469,7 +577,15 @@ margin-top: 5px;
     z-index: 1000;
     font-family: 'Hanzel', sans-serif;
     letter-spacing: 2px;
+    min-width: 40px;
+  }
+
+  .back-to-top-text {
+    display: none;
+  }
+
+  .back-to-top-arrow {
+    display: inline;
+    font-size: 18px;
   }
 }
-
-
