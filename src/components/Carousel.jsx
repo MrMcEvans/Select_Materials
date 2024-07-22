@@ -3,7 +3,7 @@ import img1 from '../assets/ConstructionPic1.png';
 import img2 from '../assets/ConstructionPic2.png';
 import './style.css';
 import { Carousel, initMDB } from "mdb-ui-kit";
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
 
 
@@ -34,6 +34,7 @@ export default function CarouselInit() {
                         </HashLink>
                     </h3>
                     
+                    
                 </div>
 
                 <div className="carousel-item">
@@ -59,7 +60,7 @@ export default function CarouselInit() {
 
                     <h3>
                         COMING SOON <br />
-                        <small class="text-muted">Orange Location</small>
+                        <small className="text-muted">Orange Location</small>
                     </h3>
 
                 </div>
