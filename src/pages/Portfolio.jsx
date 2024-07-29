@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import '../components/style.css';
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
+import { Reveal } from '../components/utils/Reveal';
 
 export default function About() {
   useEffect(() => {
@@ -9,6 +10,7 @@ export default function About() {
   }, []);
   return (
     <div>
+      <Reveal>
     <div className="card mb-3">
     <h2>Site-Work Services</h2>
   <p>
@@ -73,6 +75,7 @@ export default function About() {
             </div>
           </div>
         </div>
+        </Reveal>
         </div>
   );
 }

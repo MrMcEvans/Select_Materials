@@ -16,7 +16,7 @@ export default function CarouselInit() {
     return (
 
         <div id="carouselMaterialStyle" className="carousel slide carousel-fade" data-mdb-ride="carousel" data-mdb-carousel-init>
-
+            
 
             <div className="carousel-inner rounded-5 shadow-4-strong">
                 <div className="carousel-item active" data-mdb-interval="3000">

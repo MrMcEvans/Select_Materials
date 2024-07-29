@@ -2,6 +2,7 @@ import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import Carousel from '../components/Carousel';
 import { Link } from 'react-router-dom';
 import { width } from '@fortawesome/free-solid-svg-icons/fa0';
+import { Reveal } from '../components/utils/Reveal';
 
 const containerStyle = {
   width: '45%',
@@ -51,7 +52,9 @@ function MyMapComponent() {
   };
 
   return (
+    
     <div style={gridStyle} id='bemap' className='map'>
+      
       <div style={containerStyle} className='map-item'>
         <h2>Beaumont, TX</h2>
         <LoadScript googleMapsApiKey="AIzaSyCOgrlyOC6bg6nncXVdJihSflA9XvKrtSc">
@@ -86,12 +89,13 @@ export default function Home() {
   return (
     <div className="container">
       <Carousel />
+      
       <div className="home-card">
         <section className="wrap">
           <div className="card">
             <h1 className="card-title">Who We Are</h1>
             <div className="card-body">
-
+            <Reveal>
               <h2>Welcome to Select Materials</h2>
               <p>
                 Located in the heart of Port Arthur and Beaumont, TX, Select Materials has
@@ -101,6 +105,7 @@ export default function Home() {
                 customers with top-notch products and exceptional customer
                 service.
               </p>
+              </Reveal>
               <br />
               <hr className="hr hr-blurry" />
               <br className='' />
@@ -135,7 +140,7 @@ export default function Home() {
               <br className='' />
               <hr className="hr hr-blurry" />
               <br />
-
+              <Reveal>
               <h2>Our Products</h2>
               <p>We offer a wide range of products including:</p>
               <ul className='list-group list-group-light'>
@@ -189,11 +194,12 @@ export default function Home() {
                 Select Materials has the supplies you need to get the job done right.
               </p>
 
-
+              </Reveal>
               <br />
               <hr className="hr hr-blurry" />
               <br />
               <div className=''>
+                <Reveal>
                 <h2>Contact Us</h2>
                 <p>
                   Please give us a call, or explore
@@ -211,6 +217,7 @@ export default function Home() {
                 >
                   Contact For A Quote
                 </Link>
+                </Reveal>
               </div>
             </div>
           </div>
@@ -220,10 +227,14 @@ export default function Home() {
         <br />
         <br />
         <br />
+        
         <section>
           <MyMapComponent id="map" className="map" />
+
         </section>
+        
       </div>
+      
     </div>
   );
 }
