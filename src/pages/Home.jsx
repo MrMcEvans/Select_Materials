@@ -98,13 +98,14 @@ export default function Home() {
             <Reveal>
               <h2>Welcome to Select Materials</h2>
               <p>
-                Located in the heart of Port Arthur and Beaumont, TX, Select Materials has
-                been a trusted provider of high-quality soil, gravel, and
+                Located in the heart of Southeast Texas, Select Materials has
+                been a trusted provider of excavated material and
                 landscaping materials <strong> since 2019 </strong>. We
                 are dedicated to serving both industrial and commercial
                 customers with top-notch products and exceptional customer
-                service.
+                service. Come see us at our Beaumont and Port Arthur locations.
               </p>
+              <p>ORANGE LOCATION CONING SOON</p>
               </Reveal>
               <br />
               <hr className="hr hr-blurry" />
@@ -112,17 +113,18 @@ export default function Home() {
               <br />
 
               <div className=''>
+                <Reveal>
                 <h2><strong>What Sets Us Apart</strong></h2>
                 <ul className='list-group'>
                   <li >
-                    <strong>Quality Products:</strong> We source only the best
+                    <strong>Quality Products:</strong> We provide only the best local
                     materials to ensure your projects are built to last.
                   </li >
                   <li >
-                    <strong>Industrial Expertise:</strong> At Select Materials, we understand the unique requirements of industrial projects and are equipped to deliver the high-quality materials and expert guidance necessary to ensure their success. Our commitment to excellence and customer satisfaction makes us the preferred choice for both industrial and commercial needs in the region.
+                    <strong>Industrial Expertise:</strong> At Select Materials, we understand the unique requirements of industrial projects and are equipped to deliver the high-quality materials and expert guidance necessary to ensure their success. Our commitment to excellence and customer satisfaction makes us the preferred choice for both industrial and commercial needs in the area.
                   </li>
                   <li >
-                    <strong>Commercial Expertise:</strong>We offer specialized advice and support tailored to the needs of commercial projects, helping you achieve outstanding results.
+                    <strong>Commercial Expertise:</strong> We offer specialized advice and cost saving alternatives tailored to the needs of commercial projects, helping you achieve outstanding results.
                   </li>
                   <li >
                     <strong>Customer Satisfaction:</strong> We are committed to
@@ -134,6 +136,7 @@ export default function Home() {
                     supporting local projects.
                   </li>
                 </ul>
+                </Reveal>
 
               </div>
               <br />
@@ -156,7 +159,7 @@ export default function Home() {
                   className="btn btn-dark"
                   role="button"
                 >
-                  <strong>Clay 60/40</strong>
+                  <strong>60/40 Structural Fill</strong>
                 </Link></ul>
                 <ul className="list-group-item"><Link
                   to="/About#"
@@ -184,7 +187,7 @@ export default function Home() {
                   className="btn btn-dark"
                   role="button"
                 >
-                  <strong>Gravel</strong>
+                  <strong>Landscaping Mulch</strong>
                 </Link></ul>
 
               </ul>

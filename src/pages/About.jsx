@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import '../components/style.css';
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
+import { Reveal } from '../components/utils/Reveal';
 
 export default function About() {
   useEffect(() => {
@@ -9,6 +10,7 @@ export default function About() {
   }, []);
   return (
     <div>
+      <Reveal>
       <div className="card">
         <h2 className="card-title">Products We Offer</h2>
 
@@ -23,7 +25,7 @@ export default function About() {
                     alt="Sunset Over the Sea"
                   />
                   <div className="card-body">
-                    <h5>Pure Clay</h5>
+                    <h5>Clay</h5>
 
                     <HashLink
                       to="/About/#pure-clay-description"
@@ -67,7 +69,7 @@ export default function About() {
                     alt="Sunset Over the Sea"
                   />
                   <div className="card-body">
-                    <h5>Clay 60/40</h5>
+                    <h5>60/40 Structural Fill</h5>
 
                     <HashLink
                       to="/About/#clay-60-40"
@@ -126,36 +128,18 @@ export default function About() {
               </div>
             </div>
             <div className="col-md-6 col-lg-4 product-main">
-              <div id="delivery">
-                <div className="card-products" style={{ width: '18rem' }}>
-                  <img
-                    src="https://reagg.com/wp-content/uploads/2018/04/highway-construction.jpg"
-                    className="card-img-top"
-                    alt="Sunset Over the Sea"
-                  />
-                  <div className="card-body">
-                    <h5>Gravel</h5>
-
-                    <HashLink
-                      to="/About/#gravel-description"
-                      className="btn btn-dark"
-                      role="button"
-                    >
-                      More Info
-                    </HashLink>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
       </div>
+      </Reveal>
       <br id="pure-clay-description" />
       <div>
         <div className="card mb-3">
           <div className="row g-0 product-control">
             <div className="col-md-4 product-cards">
-              <h1>Pure Clay</h1>
+              <h1>Clay</h1>
               <img
                 src="https://as2.ftcdn.net/v2/jpg/01/87/01/11/1000_F_187011119_tC8i7evzhgcAiEDoZzKIfIJ6iIzZQ5RA.jpg"
                 alt="Trendy Pants and Shoes"
@@ -170,9 +154,9 @@ export default function About() {
                   <strong>Why Choose Our Clay:</strong>
                 </h4>
                 <p>
-                  At Select Materials, we provide only the highest quality pure
-                  clay, meticulously sourced and processed to ensure superior
-                  performance in your construction projects. Our pure clay
+                  At Select Materials, we provide only the highest quality
+                  clay, sourced to ensure superior
+                  performance in your construction projects. Our clay
                   boasts:
                 </p>
                 <ul className="list-group list-group-light">
@@ -260,7 +244,7 @@ export default function About() {
         <div className="card mb-3">
           <div className="row g-0 product-control">
             <div className="col-md-4 product-cards">
-              <h1>Clay 60/40</h1>
+              <h1>60/40 Structural Fill</h1>
               <img
                 src="https://141505571.cdn6.editmysite.com/uploads/1/4/1/5/141505571/s878442499453600746_p2_i1_w1280.jpeg"
                 alt="Trendy Pants and Shoes"
@@ -272,10 +256,10 @@ export default function About() {
               <div className="card-body">
 
                 <h4>
-                  <strong>Why Choose Our Clay 60/40:</strong>
+                  <strong>Why Choose Our 60/40:</strong>
                 </h4>
                 <p>
-                  At Select Materials, our Clay 60/40 blend is crafted to meet
+                  At Select Materials, our 60/40 blend is crafted to meet
                   the highest standards for construction use. Our blend offers:
                 </p>
                 <ul className="list-group list-group-light">
@@ -285,14 +269,13 @@ export default function About() {
                     versatile for multiple applications..
                   </li>
                   <li className="list-group-item">
-                    <strong>High Quality:</strong> Sourced and processed to
-                    eliminate impurities, ensuring consistency and reliability
+                    <strong>High Quality:</strong> Meeting project specifications, ensuring consistency and reliability
                     in your projects.
                   </li>
                   <li className="list-group-item">
                     <strong>Enhanced Performance:</strong> Ideal for use in
-                    sports fields, landscaping, and construction projects
-                    requiring firm, stable, and well-drained soil.
+                    roads, building pads, landscaping, and construction projects
+                    requiring firm, stable, and foundation soil.
                   </li>
                 </ul>
                 <Link
@@ -327,12 +310,9 @@ export default function About() {
                   <strong>Why Choose Our Sand:</strong>
                 </h4>
                 <p>
-                  Sand is a crucial component in the construction industry, used for various applications including concrete, mortar, plaster, and paving. Its properties make it ideal for providing strength, durability, and stability to building structures.
+                  Sand is a crucial component in the construction industry, used for various applications including pipe bedding and other non-plastic fill applications. Its properties make it ideal for providing strength, durability, and stability to building structures.
                 </p>
                 <ul className="list-group list-group-light">
-                  <li className="list-group-item">
-                    <strong>High Purity and Quality:</strong> Our sand is meticulously sourced and processed to ensure it is free from harmful impurities like clay, silt, and organic matter. This guarantees the integrity and strength of your construction projects.
-                  </li>
                   <li className="list-group-item">
                     <strong>Cost Effective:</strong> By providing top-quality sand that reduces waste and enhances construction quality, we offer a cost-effective solution for your projects.
                   </li>
@@ -398,7 +378,7 @@ export default function About() {
         </div>
       </div>
       <br id="gravel-description" />
-      <div>
+      {/* <div>
         <div className="card mb-3">
           <div className="row g-0 product-control">
             <div className="col-md-4 product-cards">
@@ -421,7 +401,7 @@ export default function About() {
                 </p>
                 <ul className="list-group list-group-light">
                   <li className="list-group-item">
-                    <strong>High-Quality Materials:</strong> Our gravel is sourced and processed to ensure the highest quality, providing superior strength and durability for your projects.
+                    <strong>High-Quality Materials:</strong> Our gravel is sourced to ensure the highest quality, providing superior strength and durability for your projects.
                   </li>
                   <li className="list-group-item">
                     <strong>Consistent Supply:</strong> We guarantee a reliable and steady supply of gravel, ensuring your projects remain on schedule.
@@ -442,7 +422,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
 
   );

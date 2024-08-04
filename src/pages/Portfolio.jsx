@@ -17,8 +17,10 @@ export default function About() {
     At Select Materials, we specialize in providing comprehensive site-work services tailored to meet the needs of industrial and commercial businesses. Our expertise ensures that your projects are completed efficiently and to the highest standards. Our site-work services include:
   </p>
   <ul className='list-group'>
+  <li className='list-group-item portfolio-list'><strong>Structural Fill</strong></li>
     <li className='list-group-item portfolio-list'><strong>Drain Structures</strong></li>
     <li className='list-group-item portfolio-list'><strong>Drainage</strong></li>
+    <li className='list-group-item portfolio-list'><strong>Ditches</strong></li>
     <li className='list-group-item portfolio-list'><strong>Drain Piping</strong></li>
     <li className='list-group-item portfolio-list'><strong>Roads</strong></li>
     <li className='list-group-item portfolio-list'><strong>Building Pads</strong></li>
@@ -43,6 +45,8 @@ export default function About() {
                   Contact For Info
                 </Link>
   </div>
+  </Reveal>
+  <Reveal>
         <div className="card mb-3">
           <div className="row g-0 product-control">
             <div className="col-md-4 product-cards">
