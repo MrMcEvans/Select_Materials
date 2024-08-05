@@ -58,7 +58,7 @@ function ContactFooter() {
                   className="text-reset"
                   rel="noreferrer"
                 >
-                  11555 Tram Road Beaumont, Tx, 77713
+                  11555 Tram Rd Beaumont, TX, 77713
                 </a></p>
             </div>
 
@@ -90,11 +90,6 @@ function ContactFooter() {
         Lime Stabilized Soil
       </Link>
     </li>
-    <li className='contact-list-item'>
-      <Link to="/About" className="text-reset">
-        Gravel
-      </Link>
-    </li>
   </ul>
             </div>
 
@@ -108,7 +103,7 @@ function ContactFooter() {
                   className="text-reset"
                   rel="noreferrer"
                 >
-                  SelectMaterial409@gmail.com
+                  SelectMaterials409@gmail.com
                 </a>
               </p>
               <p>

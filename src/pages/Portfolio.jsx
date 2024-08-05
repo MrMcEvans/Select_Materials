@@ -80,6 +80,55 @@ export default function About() {
           </div>
         </div>
         </Reveal>
+        {/* <div className='card'><ul>
+  <li className="card" style={{ color: '#ececec', backgroundColor: '#E98B43' }}>
+    <div className="icon"><i className="fa-solid fa-house"></i></div>
+    <div className="content">
+    <strong>Structural Fill</strong>
+    </div>
+  </li>
+  <li className="card" style={{ color: '#ececec', backgroundColor: '#C23D2A' }}>
+    <div className="icon"><i className="fa-solid fa-gear"></i></div>
+    <div className="title">Lorem ipsum</div>
+    <div className="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis pretium euismod. 
+      Aenean elit sapien, varius quis ante sit amet, tincidunt finibus orci. 
+      Ut consectetur imperdiet quam, at ultrices mi rutrum ut. 
+      Sed semper justo quis nisl ornare interdum in ut ante.
+    </div>
+  </li>
+  <li className="card" style={{ color: '#ececec', backgroundColor: '#842C2A' }}>
+    <div className="icon"><i className="fa-solid fa-magnifying-glass"></i></div>
+    <div className="title">Lorem ipsum</div>
+    <div className="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis pretium euismod. 
+      Aenean elit sapien, varius quis ante sit amet, tincidunt finibus orci. 
+      Ut consectetur imperdiet quam, at ultrices mi rutrum ut. 
+      Sed semper justo quis nisl ornare interdum in ut ante.
+    </div>
+  </li>
+  <li className="card" style={{ color: '#ececec', backgroundColor: '#022F46' }}>
+    <div className="icon"><i className="fa-solid fa-chart-column"></i></div>
+    <div className="title">Lorem ipsum</div>
+    <div className="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis pretium euismod. 
+      Aenean elit sapien, varius quis ante sit amet, tincidunt finibus orci. 
+      Ut consectetur imperdiet quam, at ultrices mi rutrum ut. 
+      Sed semper justo quis nisl ornare interdum in ut ante.
+    </div>
+  </li>
+  <li className="card" style={{ color: '#ececec', backgroundColor: '#032437' }}>
+    <div className="icon"><i className="fa-solid fa-circle-star"></i></div>
+    <div className="title">Lorem ipsum</div>
+    <div className="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis pretium euismod. 
+      Aenean elit sapien, varius quis ante sit amet, tincidunt finibus orci. 
+      Ut consectetur imperdiet quam, at ultrices mi rutrum ut. 
+      Sed semper justo quis nisl ornare interdum in ut ante.
+    </div>
+  </li>
+</ul>
+</div> */}
         </div>
   );
 }
