@@ -3,6 +3,11 @@ import '../components/style.css';
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 import { Reveal } from '../components/utils/Reveal';
+import sand from '../assets/Snad.jpg'
+import lime from '../assets/Lime_S_Soil.jpg'
+import topSoil from '../assets/Top_Soil.jpg'
+import clay from '../assets/clay.jpg'
+import sixtyForty from '../assets/ConstructionVehicle.jpg'
 
 export default function About() {
   useEffect(() => {
@@ -20,7 +25,7 @@ export default function About() {
               <div id="pure-clay">
                 <div className="card-products" style={{ width: '18rem' }}>
                   <img
-                    src="https://as2.ftcdn.net/v2/jpg/01/87/01/11/1000_F_187011119_tC8i7evzhgcAiEDoZzKIfIJ6iIzZQ5RA.jpg"
+                    src={clay}
                     className="card-img-top"
                     alt="Sunset Over the Sea"
                   />
@@ -42,7 +47,7 @@ export default function About() {
               <div id="top-soil">
                 <div className="card-products" style={{ width: '18rem' }}>
                   <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoTELJwBHFWDbK1gBmITKVP9IKM-Djfw2nTw&s"
+                    src={topSoil}
                     className="card-img-top"
                     alt="Sunset Over the Sea"
                   />
@@ -64,7 +69,7 @@ export default function About() {
               <div id="clay">
                 <div className="card-products" style={{ width: '18rem' }}>
                   <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7hGDAXpMRmZbIOb9uZGY2gxbLdQ84R0DhBA&s"
+                    src={sixtyForty}
                     className="card-img-top"
                     alt="Sunset Over the Sea"
                   />
@@ -87,7 +92,7 @@ export default function About() {
               <div id="sand">
                 <div className="card-products" style={{ width: '18rem' }}>
                   <img
-                    src="https://2.wlimg.com/product_images/bc-full/2019/11/4192024/construction-sand-1573714612-5154504.jpeg"
+                    src={sand}
                     className="card-img-top"
                     alt="Sunset Over the Sea"
                   />
@@ -109,7 +114,7 @@ export default function About() {
               <div id="lime-stabilized">
                 <div className="card-products" style={{ width: '18rem' }}>
                   <img
-                    src="https://i0.wp.com/theconstructor.org/wp-content/uploads/2018/12/Soil-Lime-Stabilization.jpg?fit=897%2C575&ssl=1"
+                    src={lime}
                     className="card-img-top"
                     alt="Sunset Over the Sea"
                   />
@@ -127,9 +132,6 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4 product-main">
-              
-            </div>
           </div>
         </div>
       </div>
@@ -141,7 +143,7 @@ export default function About() {
             <div className="col-md-4 product-cards">
               <h1>Clay</h1>
               <img
-                src="https://as2.ftcdn.net/v2/jpg/01/87/01/11/1000_F_187011119_tC8i7evzhgcAiEDoZzKIfIJ6iIzZQ5RA.jpg"
+                src={sand}
                 alt="Trendy Pants and Shoes"
                 className="img-added rounded-start"
               />
@@ -193,7 +195,7 @@ export default function About() {
               <h1>Top Soil</h1>
 
               <img
-                src="https://le-cdn.hibuwebsites.com/35dd3b2e659b466cbe6769e5414062fc/dms3rep/multi/opt/shutterstock_604818800-1920w.jpg"
+                src={topSoil}
                 alt="Trendy Pants and Shoes"
                 className="img-added"
               />
@@ -246,7 +248,7 @@ export default function About() {
             <div className="col-md-4 product-cards">
               <h1>60/40 Structural Fill</h1>
               <img
-                src="https://141505571.cdn6.editmysite.com/uploads/1/4/1/5/141505571/s878442499453600746_p2_i1_w1280.jpeg"
+                src={sixtyForty}
                 alt="Trendy Pants and Shoes"
                 className="img-added"
               />
@@ -297,7 +299,7 @@ export default function About() {
             <div className="col-md-4 product-cards">
               <h1>Sand</h1>
               <img
-                src="https://img3.exportersindia.com/product_images/bc-full/2021/1/7406108/construction-sand-1610097892-5672918.jpeg"
+                src={sand}
                 alt="Trendy Pants and Shoes"
                 className="img-added rounded-start"
               />
@@ -339,7 +341,7 @@ export default function About() {
             <div className="col-md-4 product-cards">
               <h1>Lime Stabilized Soil</h1>
               <img
-                src="https://i0.wp.com/theconstructor.org/wp-content/uploads/2018/12/Soil-Lime-Stabilization.jpg?fit=897%2C575&ssl=1"
+                src={lime}
                 alt="Trendy Pants and Shoes"
                 className="img-added rounded-start"
               />

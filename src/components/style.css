@@ -1,4 +1,6 @@
 /* @import selectMaterialsImage from '../assets/SelectMaterials.png'; */
+@import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @font-face {
   font-family: 'Hanzel';
   src: url('../assets/HanzelThinBold.ttf');
@@ -326,13 +328,15 @@ footer.bg-body-tertiary {
 
 
 }
+.img-added{
+  height: 400px; /* Set the desired height */
+  width: 100%;
+}
 
 
 
 
 
-@import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * { margin: 0; padding: 0; box-sizing: border-box }
 body {
