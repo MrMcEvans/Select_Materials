@@ -112,6 +112,12 @@ function ContactFooter() {
                   +1 409-960-1589
                 </a>
               </p>
+              <p>
+                <i ></i>
+                <a href="https://tinyurl.com/2dzsp8sc" className="text-reset">
+                  Careers
+                </a>
+              </p>
             </div>
           </div>
         </div>
