@@ -15,22 +15,14 @@ function ContactFooter() {
         </div>
 
         <div>
-        <SocialIcon url="https://www.facebook.com/SelectMaterialsPortArthur/" className="me-4 text-reset" />
-          <a href="#" className="me-4 text-reset">
-            <i className="fab fa-twitter"></i>
+        <h4 className="text-uppercase fw-bold mb-4">
+                <i className="fas fa-gem me-3"></i>Select Materials
+                
+              </h4>
+          <a href="https://www.facebook.com/SelectMaterialsPortArthur/" className="me-4 text-reset">
+            <i className="fab fa-facebook"></i>
           </a>
-          <a href="#" className="me-4 text-reset">
-            <i className="fab fa-google"></i>
-          </a>
-          <a href="#" className="me-4 text-reset">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href="#" className="me-4 text-reset">
-            <i className="fab fa-linkedin"></i>
-          </a>
-          <a href="#" className="me-4 text-reset">
-            <i className="fab fa-github"></i>
-          </a>
+          
         </div>
       </section>
 
@@ -38,10 +30,7 @@ function ContactFooter() {
         <div className="container text-center text-md-start mt-5">
           <div className="row mt-3">
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <h4 className="text-uppercase fw-bold mb-4">
-                <i className="fas fa-gem me-3"></i>Select Materials
-                
-              </h4>
+              
               <h5>Port Arthur, TX</h5>
               <p><a
                   href="https://www.google.com/maps/place/2570+Halbouty+Rd+Port+Arthur,+TX,+77640"

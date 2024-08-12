@@ -212,6 +212,7 @@ form button:hover {
   letter-spacing: 4px;
   margin-bottom: 30px;
   padding: 10px;
+  margin-top: 30px;
 }
 
 .contact-list {
@@ -542,9 +543,13 @@ li strong {
   .card {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 300%);
     width: 100%; /* Adjust the width to take up more of the viewport */
-    margin: auto; 
+    margin: auto;
+    margin-top: 55px;
+    
   }
-
+  .card-title{
+    margin-top: 0;
+  }
   .product-cards img {
     display: none;
   }
