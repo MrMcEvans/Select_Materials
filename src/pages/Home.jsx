@@ -99,8 +99,8 @@ export default function Home() {
               <h2>Welcome to Select Materials</h2>
               <p>
                 Located in the heart of Southeast Texas, Select Materials has
-                been a trusted provider of excavated material and
-                landscaping materials <strong> since 2019 </strong>. We
+                been a trusted provider of excavated material,
+                landscaping materials and structural fill <strong> since 2019 </strong>. We
                 are dedicated to serving both industrial and commercial
                 customers with top-notch products and exceptional customer
                 service. Come see us at our Beaumont and Port Arthur locations.
@@ -189,8 +189,15 @@ export default function Home() {
                 >
                   <strong>Landscaping Mulch</strong>
                 </Link></ul>
-
+                <ul className="list-group-item"><Link
+                  to="/Portfolio#"
+                  className="btn btn-dark"
+                  role="button"
+                >
+                  <strong>Structural Fill</strong>
+                </Link></ul>
               </ul>
+
 
               <p className='products-p'>
                 Whether you're managing a large industrial or commercial project, or working on a smaller residential job,
