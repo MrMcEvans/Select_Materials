@@ -3,45 +3,48 @@ import emailjs from 'emailjs-com';
 import './style.css';
 
 function Form() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [sendCopy, setSendCopy] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+    sendCopy: false,
+  });
 
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
-    if (type === 'checkbox') {
-      setSendCopy(checked);
-    } else if (name === 'name') {
-      setName(value);
-    } else if (name === 'email') {
-      setEmail(value);
-    } else if (name === 'message') {
-      setMessage(value);
-    }
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: type === 'checkbox' ? checked : value,
+    }));
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
     const templateParams = {
-      from_name: name,
-      from_email: email,
-      message: message,
+      from_name: formData.name,
+      from_email: formData.email,
+      from_tel: formData.phone, // Adjusted to match the template
+      message: formData.message,
     };
 
     emailjs.send('service_ktxpnmk', 'template_ocp1h9n', templateParams, 'yPkFvDdQnjuHdwbZh')
       .then((response) => {
         alert('Email sent successfully!');
-        setName('');
-        setEmail('');
-        setMessage('');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
+          sendCopy: false,
+        });
 
-        if (sendCopy) {
+        if (formData.sendCopy) {
           // Send a copy to the user's email
           emailjs.send('service_ktxpnmk', 'template_vljnf68', {
             ...templateParams,
-            to_email: email,
+            to_email: formData.email,
           }, 'yPkFvDdQnjuHdwbZh')
             .then((response) => {
               alert('A copy of the email has been sent to you.');
@@ -58,7 +61,7 @@ function Form() {
 
   return (
     <div className='card form-card'>
-      <h1>Please <a href="tel:+14099601589" className='text-white'>CALL</a> us or fill out a submission form for a quote </h1>
+      <h1>Please <a href="tel:+14099601589" className='text-white'>CALL</a> us or fill out a submission form for a quote</h1>
       <form onSubmit={handleFormSubmit} style={{ width: 'auto' }}>
         <div data-mdb-input-init className="form-outline mb-4">
           <input
@@ -66,7 +69,7 @@ function Form() {
             id="form4Example1"
             className="form-control"
             name="name"
-            value={name}
+            value={formData.name}
             onChange={handleInputChange}
             required
           />
@@ -79,7 +82,7 @@ function Form() {
             id="form4Example2"
             className="form-control"
             name="email"
-            value={email}
+            value={formData.email}
             onChange={handleInputChange}
             required
           />
@@ -87,28 +90,41 @@ function Form() {
         </div>
 
         <div data-mdb-input-init className="form-outline mb-4">
-          <textarea
-            type="text"
-            className="form-control"
+          <input
+            type="tel"
             id="form4Example3"
+            className="form-control"
+            name="phone"
+            value={formData.phone}
+            onChange={handleInputChange}
+            required
+          />
+          <label className="form-label" htmlFor="form4Example3">Phone Number</label>
+        </div>
+
+        <div data-mdb-input-init className="form-outline mb-4">
+          <textarea
+            className="form-control"
+            id="form4Example4"
             rows="4"
             name="message"
-            value={message}
+            value={formData.message}
             onChange={handleInputChange}
             required
           ></textarea>
-          <label className="form-label" htmlFor="form4Example3">Message</label>
+          <label className="form-label" htmlFor="form4Example4">Message</label>
         </div>
 
         <div className="form-check d-flex justify-content-center mb-4">
           <input
             className="form-check-input me-2"
             type="checkbox"
-            id="form4Example4"
-            checked={sendCopy}
+            id="form4Example5"
+            name="sendCopy"
+            checked={formData.sendCopy}
             onChange={handleInputChange}
           />
-          <label className="form-check-label" htmlFor="form4Example4">
+          <label className="form-check-label" htmlFor="form4Example5">
             Send me a copy of this message
           </label>
         </div>
@@ -122,5 +138,3 @@ function Form() {
 }
 
 export default Form;
-
-

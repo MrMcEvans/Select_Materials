@@ -143,7 +143,7 @@ export default function About() {
             <div className="col-md-4 product-cards">
               <h1>Clay</h1>
               <img
-                src={sand}
+                src={clay}
                 alt="Trendy Pants and Shoes"
                 className="img-added rounded-start"
               />
