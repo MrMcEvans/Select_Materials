@@ -150,6 +150,11 @@ form button:hover {
   background-color: #494949;
   color: white;
 }
+#form4Example4{
+  background-color: #494949;;
+  color: white;
+  border: 1px solid #ccc;
+}
 
 #form4Example3:focus {
   border-color: #4a90e2;
@@ -158,6 +163,9 @@ form button:hover {
 
 #form4Example3:hover {
   border-color: #ffffff;
+}
+.form-control:focus{
+  background-color: #494949;
 }
 
 form button {
