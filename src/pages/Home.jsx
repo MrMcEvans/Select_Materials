@@ -105,7 +105,7 @@ export default function Home() {
                 customers with top-notch products and exceptional customer
                 service. Come see us at our Beaumont and Port Arthur locations.
               </p>
-              <p>ORANGE LOCATION CONING SOON</p>
+              <p>ORANGE LOCATION COMING SOON</p>
               </Reveal>
               <br />
               <hr className="hr hr-blurry" />
