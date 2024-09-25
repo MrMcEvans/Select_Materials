@@ -446,6 +446,8 @@ li strong {
 
 }
 
+
+
 @media (min-width: 1000px) {
   .img-fluid {
     max-width: 60%;
@@ -615,5 +617,43 @@ li strong {
   .back-to-top-arrow {
     display: inline;
     font-size: 18px;
+  }
+}
+@media (max-width: 1280px) and (max-height: 800px){
+  .title {
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    top: 30px;
+  }
+  .nav-item {
+    padding: 5px;
+    border-bottom: 1px solid white;
+    margin-right: 16px;
+    font-size: 18px;
+  }
+}
+@media( max-width: 912px){
+  .title {
+    font-size: 26px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    top: 35px;
+  }
+}
+@media( max-width: 820px){
+  .title {
+    font-size: 26px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    top: 30px;
+  }
+}
+@media (max-width: 344px) {
+  .title {
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    top: 30px;
   }
 }
